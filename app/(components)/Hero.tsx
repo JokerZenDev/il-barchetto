@@ -1,4 +1,5 @@
 import { Satisfy } from "next/font/google"
+import Image from "next/image"
 
 const satisfy = Satisfy({
 	subsets: ["latin"],
@@ -8,24 +9,35 @@ const satisfy = Satisfy({
 export default function Hero({
 	surtitle,
 	title,
+	img,
 	subtitle,
 }: {
 	surtitle?: string
 	title: string
+	img: string
 	subtitle?: string
 }) {
 	return (
 		<div
-			className={`flex m-0 h-[90vh] max-h-[1000px] items-center justify-center bg-cover bg-center ${satisfy.className}`}
-			style={{ backgroundImage: 'url("/hero.jpg")' }}
+			className={`relative flex m-0 h-[90vh] max-h-[1000px] items-center justify-center ${satisfy.className}`}
 		>
-			<div className='text-white mx-4 md:mx-44 w-full flex flex-col gap-1 md:gap-2'>
+			<Image
+				src={img}
+				alt={title}
+				fill={true}
+				objectFit='cover'
+				priority
+				className='z-0'
+			/>
+			<div className='text-white mx-4 lg:mx-44 w-full flex flex-col gap-1 lg:gap-2 z-[1]'>
 				{surtitle && (
-					<span className='text-3xl md:text-4xl font-thin'>{surtitle}</span>
+					<span className='text-3xl lg:text-4xl font-thin'>
+						{surtitle}
+					</span>
 				)}
-				<h1 className='text-5xl md:text-7xl'>{title}</h1>
+				<h1 className='text-5xl lg:text-7xl'>{title}</h1>
 				{subtitle && (
-					<span className='text-3xl md:text-4xl'>{subtitle}</span>
+					<span className='text-3xl lg:text-4xl'>{subtitle}</span>
 				)}
 			</div>
 		</div>
