@@ -9,7 +9,13 @@ const satisfy = Satisfy({
 	weight: "400",
 })
 
-export default function Header() {
+export default function Header({
+	lang,
+	dictHeader,
+}: {
+	lang: string
+	dictHeader: any
+}) {
 	const [isScrolled, setIsScrolled] = useState(false)
 
 	useEffect(() => {
@@ -25,10 +31,14 @@ export default function Header() {
 				isScrolled ? "bg-black" : "bg-transparent"
 			}`}
 		>
-			<a href="/" className={`${satisfy.className} text-2xl z-20`} aria-label="homepage">
+			<a
+				href='/'
+				className={`${satisfy.className} text-2xl z-20`}
+				aria-label='homepage'
+			>
 				Agriturismo Il Barchetto
 			</a>
-			<Menu />
+			<Menu lang={lang} dictHeader={dictHeader} />
 		</header>
 	)
 }

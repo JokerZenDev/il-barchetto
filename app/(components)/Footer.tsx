@@ -1,6 +1,5 @@
 import { FaTripadvisor } from "react-icons/fa"
 import { FiInstagram } from "react-icons/fi"
-import { menuItems } from "../(helpers)/menuItems"
 import Image from "next/image"
 
 const socials = [
@@ -16,18 +15,28 @@ const socials = [
 	},
 ]
 
-const additionalItems = [
-	{
-		name: "Progetto FEASR",
-		href: "/",
-	},
-	{
-		name: "Cookie Policy",
-		href: "/",
-	},
-]
+export default function Footer({
+	lang,
+	dictFooter,
+	dictHeader,
+}: {
+	lang: string
+	dictFooter: any
+	dictHeader: any
+}) {
+	console.log(dictFooter.additionalLinks)
+	const additionalItems = Object.keys(dictFooter.additionalLinks).map(
+		(key: string) => ({
+			name: dictFooter.additionalLinks[key],
+			href: `/${lang}/${key}`,
+		})
+	)
 
-export default function Footer() {
+	const menuItems = Object.keys(dictHeader).map((key: string) => ({
+		name: dictHeader[key],
+		href: `/${lang}/${key}`,
+	}))
+
 	const footerItems = [...menuItems, ...additionalItems]
 
 	return (
@@ -52,18 +61,18 @@ export default function Footer() {
 						alt='FEASR'
 						fill={true}
 						objectFit='contain'
-						objectPosition="right"
+						objectPosition='right'
 					/>
 				</div>
 			</div>
 			<hr />
-			<div className='w-full flex justify-between flex-col-reverse gap-6 lg:flex-row'>
-				<p className="text-xs">
+			<div className='w-full flex justify-between items-center flex-col-reverse gap-6 lg:flex-row'>
+				<p className='text-xs'>
 					Agriturismo Il Barchetto | &copy; {new Date().getFullYear()}{" "}
-					Tutti i diritti riservati.
+					{dictFooter.copyright}
 				</p>
 				<div className='flex items-center gap-2'>
-					Seguici su:{" "}
+					{dictFooter.followUS}:{" "}
 					<ul className='flex gap-2 text-xl'>
 						{socials.map((social, key) => (
 							<li key={key}>

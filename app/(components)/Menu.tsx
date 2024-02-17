@@ -1,10 +1,15 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import { FiMenu, FiX } from "react-icons/fi"
-import { menuItems } from "../(helpers)/menuItems"
 
-export default function Menu() {
+export default function Menu({
+	lang,
+	dictHeader,
+}: {
+	lang: string
+	dictHeader: any
+}) {
 	const [isOpen, setIsOpen] = useState(false)
 
 	return (
@@ -14,21 +19,21 @@ export default function Menu() {
 					isOpen ? "flex" : "hidden"
 				} flex-col fixed top-0 left-0 right-0 h-screen justify-center items-center z-10 bg-black lg:h-auto lg:bg-transparent lg:relative lg:flex-row lg:flex gap-6`}
 			>
-				{menuItems.map((item) => (
+				{Object.keys(dictHeader).map((key: string) => (
 					<a
-						key={item.name}
+						key={key}
 						className='hover:underline'
-						href={item.href}
-						aria-label={item.name}
+						href={`/${lang}/${key}`}
+						aria-label={dictHeader[key]}
 					>
-						{item.name}
+						{dictHeader[key]}
 					</a>
 				))}
 			</nav>
 			<button
 				onClick={() => setIsOpen(!isOpen)}
 				className='relative flex items-center text-2xl lg:hidden text-white z-20'
-				name="menu"
+				name='menu'
 			>
 				{isOpen ? <FiX /> : <FiMenu />}
 			</button>
