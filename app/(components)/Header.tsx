@@ -25,7 +25,7 @@ export default function Header() {
 				isScrolled ? "bg-black" : "bg-transparent"
 			}`}
 		>
-			<a href="/" className={`${satisfy.className} text-2xl z-20`}>
+			<a href="/" className={`${satisfy.className} text-2xl z-20`} aria-label="homepage">
 				Agriturismo Il Barchetto
 			</a>
 			<Menu />

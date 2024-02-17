@@ -19,6 +19,7 @@ export default function Menu() {
 						key={item.name}
 						className='hover:underline'
 						href={item.href}
+						aria-label={item.name}
 					>
 						{item.name}
 					</a>
@@ -27,6 +28,7 @@ export default function Menu() {
 			<button
 				onClick={() => setIsOpen(!isOpen)}
 				className='relative flex items-center text-2xl lg:hidden text-white z-20'
+				name="menu"
 			>
 				{isOpen ? <FiX /> : <FiMenu />}
 			</button>
