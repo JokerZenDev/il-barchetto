@@ -20,6 +20,24 @@
       "Il Barchetto vi propone un accurato servizio di pernottamento con prima colazione a base di torte e dolci fatti in casa, latte e yogurt prodotti da caseifici locali: ingredienti freschi e genuini per iniziare al meglio la giornata.",
       "In tutta la struttura è disponibile la connessione Wi-Fi gratuita."
     ],
+    "prices": [
+      {
+        "room": "Trattamento",
+        "price": "Prezzo"
+      },
+      {
+        "room": "Camera singola",
+        "price": 70
+      },
+      {
+        "room": "Camera doppia",
+        "price": 90
+      },
+      {
+        "room": "Camera quadrupla",
+        "price": 110
+      }
+    ],
     "footer": [
       "Per soggiorni superiori a 2 notti possibilità di trattamento mezza pensione o pensione completa",
       "Per cani di grossa taglia costo spese di pulizia 10€"
