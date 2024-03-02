@@ -19,6 +19,34 @@ export default async function Page({
 						)
 					)}
 				</div>
+				<div className='flex flex-col w-full md:max-w-[400px] mx-auto gap-4'>
+					{dict.bedAndBreakfast.prices.map(
+						(
+							row: { room: string; price: number | string },
+							key: number
+						) => (
+							<div
+								key={key}
+								className={`flex justify-between w-full ${
+									key === 0 ? "font-bold" : ""
+								}`}
+							>
+								<span>{row.room}</span>
+								<span>
+									{row.price}
+									{typeof row.price === "number" && "€"}
+								</span>
+							</div>
+						)
+					)}
+				</div>
+				<div className='flex flex-col gap-4 text-justify'>
+					{dict.bedAndBreakfast.footer.map(
+						(row: string, key: number) => (
+							<p key={key}>{row}</p>
+						)
+					)}
+				</div>
 			</Main>
 		</Scaffold>
 	)
