@@ -1,51 +1,47 @@
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import Footer from "./(components)/Footer"
-import Header from "./(components)/Header"
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: "Agriturismo Il Barchetto | Madonna del Sasso (VB)",
-	description:
-		"Il Barchetto si trova a settecento metri di altezza sui monti che fanno da cornice al lago d’Orta. Immerso nel verde dei boschi, vi aspetterà un posto in cui si fondono i suoni della natura e degli animali che vi abitano, ideale per trascorrere giornate nel relax più totale.",
-	keywords: [
-		"agriturismo il barchetto",
-		"agriturismo lago d'orta",
-		"agriturismo lago maggiore",
-		"agriturismo verbano cusio ossola",
-		"agriturismo vco",
-		"agriturismo omegna",
-		"agriturismo piemonte",
-		"agriturismo",
-		"madonna del sasso",
-		"omegna",
-		"orta",
-		"gozzano",
-		"ristorante madonna del sasso",
-		"ristorante orta",
-		"ristorante omegna",
-		"ristorante vco",
-		"ristorante verbano cusio ossola",
-		"bed & breakfast madonna del sasso",
-		"bed & breakfast omegna",
-		"bed & breakfast orta",
-		"bed & breakfast lago d'orta",
-		"agriturismo relax",
-	],
-}
+  title: "Agriturismo Il Barchetto | Madonna del Sasso (VB)",
+  description:
+    "Il Barchetto si trova a settecento metri di altezza sui monti che fanno da cornice al lago d'Orta. Immerso nel verde dei boschi, vi aspetterà un posto in cui si fondono i suoni della natura e degli animali che vi abitano, ideale per trascorrere giornate nel relax più totale.",
+  keywords: [
+    "agriturismo il barchetto",
+    "agriturismo lago d'orta",
+    "agriturismo lago maggiore",
+    "agriturismo verbano cusio ossola",
+    "agriturismo vco",
+    "agriturismo omegna",
+    "agriturismo piemonte",
+    "agriturismo",
+    "madonna del sasso",
+    "omegna",
+    "orta",
+    "gozzano",
+    "ristorante madonna del sasso",
+    "ristorante orta",
+    "ristorante omegna",
+    "ristorante vco",
+    "ristorante verbano cusio ossola",
+    "bed & breakfast madonna del sasso",
+    "bed & breakfast omegna",
+    "bed & breakfast orta",
+    "bed & breakfast lago d'orta",
+    "agriturismo relax",
+  ],
+};
 
 export default function RootLayout({
-	children,
+  children,
 }: Readonly<{
-	children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang='en'>
-			<body className={inter.className}>
-				{children}
-			</body>
-		</html>
-	)
+  return (
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+  );
 }

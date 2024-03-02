@@ -24,7 +24,6 @@ export default function Footer({
 	dictFooter: any
 	dictHeader: any
 }) {
-	console.log(dictFooter.additionalLinks)
 	const additionalItems = Object.keys(dictFooter.additionalLinks).map(
 		(key: string) => ({
 			name: dictFooter.additionalLinks[key],
@@ -61,7 +60,7 @@ export default function Footer({
 						alt='FEASR'
 						fill={true}
 						objectFit='contain'
-						objectPosition='right'
+						objectPosition='center'
 					/>
 				</div>
 			</div>

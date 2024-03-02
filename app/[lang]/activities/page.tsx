@@ -1,5 +1,5 @@
 import Scaffold from "@/app/(components)/Scaffold"
-import Main from "../../(components)/Main"
+import Main from "@/app/(components)/Main"
 import { getDictionary } from "@/app/(helpers)/dictionaries"
 
 export default async function Page({
