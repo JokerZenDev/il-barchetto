@@ -19,6 +19,7 @@
     "@sanity/ui": "^2.0",
     "@sanity/vision": "^3.32.0",
     "@types/react-slick": "^0.23.13",
+    "@vercel/speed-insights": "^1.0.10",
     "googleapis": "^133.0.0",
     "negotiator": "^0.6.3",
     "next": "^14.1",
