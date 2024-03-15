@@ -4,6 +4,8 @@ import { NextRequest, NextResponse } from "next/server";
 
 let locales = ["en", "it"];
 
+const [AUTH_USER, AUTH_PASS] = (process.env.HTTP_BASIC_AUTH || ':').split(':');
+
 const getLocale = (req: NextRequest) => {
   let headers = { "accept-language": req.headers.get("accept-language") || "" };
   let languages = new Negotiator({ headers }).languages();
@@ -13,6 +15,13 @@ const getLocale = (req: NextRequest) => {
 };
 
 export function middleware(request: NextRequest) {
+  if (!isAuthenticated(request)) {
+		return new NextResponse('Authentication required', {
+			status: 401,
+			headers: { 'WWW-Authenticate': 'Basic' },
+		});
+	}
+
   // Check if there is any supported locale in the pathname
   const { pathname } = request.nextUrl;
   const pathnameHasLocale = locales.some(
@@ -41,4 +50,27 @@ export const config = {
     // Optional: only run on root (/) URL
     // '/'
   ],
+}
+
+// Step 2. Check HTTP Basic Auth header if present
+function isAuthenticated(req: NextRequest) {
+	if (!AUTH_PASS && !AUTH_USER) {
+		return true;
+	}
+
+	const authheader = req.headers.get('authorization') || req.headers.get('Authorization');
+
+	if (!authheader) {
+		return false;
+	}
+
+	const auth = Buffer.from(authheader.split(' ')[1], 'base64').toString().split(':');
+	const user = auth[0];
+	const pass = auth[1];
+
+	if (user == AUTH_USER && pass == AUTH_PASS) {
+		return true;
+	} else {
+		return false;
+	}
 };
