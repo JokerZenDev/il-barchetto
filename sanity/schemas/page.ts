@@ -1,5 +1,3 @@
-import { defineArrayMember, defineField, defineType } from "sanity";
-
 export default {
 	name: 'page',
 	type: 'document',

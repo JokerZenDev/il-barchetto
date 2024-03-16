@@ -1,48 +1,4 @@
 {
-  "activities": {
-    "title": "Attività e dintorni",
-    "content": [
-      "Per chi predilige l&apos;aria aperta al caos cittadino non c&apos;è niente di meglio che rilassarsi all&apos;interno della tenuta, dalle camminate estive tra i sentieri dei nostri boschi alle ricerche sfrenate di funghi tipici locali, per i quali la nostra zona è conosciuta in tutto il nord Italia.",
-      "Una vera delizia per micologi e naturalisti.",
-      "Avrete la piena libertà di passeggiare in tutto il nostro podere, osservare le nostre coltivazioni ed avvicinarvi indisturbati ai nostri animali.",
-      "D&apos;estate potrete usufruire della nostra piccola piscina in legno, abbronzarvi al sole ed utilizzare il barbecue per passare una giornata in allegria tra l&apos;aria genuina e la pace che regna sovrana.",
-      "Le meravigliose montagne offrono itinerari unici per gli amanti del trekking e della mountain bike.",
-      "La vicinanza al lago d&apos;Orta permette la pratica di tutti gli sport soprattutto per i più piccoli, dal windsurf alla vela e canoa, nonché la visita di tutte le bellezze artistiche e paesaggistiche dello splendido lago.",
-      "Non esitate a chiedere informazioni ai proprietari, vi sapranno consigliare al meglio le attività presenti nelle zone limitrofe, per soddisfare al meglio ogni vostra richiesta e farvi passare un soggiorno indimenticabile."
-    ]
-  },
-  "bedAndBreakfast": {
-    "title": "Bed & Breakfast",
-    "content": [
-      "L'agriturismo vi offre due ampie camere arredate in stile rustico, confortevoli e con servizi igienici autonomi e moderni.",
-      "Le camere sono luminose e spaziose, con impianto TV satellitare, pavimento in legno riscaldato, con l'uscita diretta in una deliziosa area verde.",
-      "Affacciate sui boschi delle nostre montagne, offrono un silenzio unico e una vista suggestiva, che vi faranno sentire in completa armonia e integrazione con l'ambiente, lontano dal rumore, smog e stress che sempre più inquinano la vita nelle città.",
-      "Il Barchetto vi propone un accurato servizio di pernottamento con prima colazione a base di torte e dolci fatti in casa, latte e yogurt prodotti da caseifici locali: ingredienti freschi e genuini per iniziare al meglio la giornata.",
-      "In tutta la struttura è disponibile la connessione Wi-Fi gratuita."
-    ],
-    "prices": [
-      {
-        "room": "Trattamento",
-        "price": "Prezzo"
-      },
-      {
-        "room": "Camera singola",
-        "price": 70
-      },
-      {
-        "room": "Camera doppia",
-        "price": 90
-      },
-      {
-        "room": "Camera quadrupla",
-        "price": 110
-      }
-    ],
-    "footer": [
-      "Per soggiorni superiori a 2 notti possibilità di trattamento mezza pensione o pensione completa",
-      "Per cani di grossa taglia costo spese di pulizia 10€"
-    ]
-  },
   "contactUs": {
     "title": "Contattaci",
     "form": {
@@ -64,24 +20,17 @@
     }
   },
   "header": {
-    "restaurant": "Ristorante",
-    "bed-and-breakfast": "Bed & Breakfast",
-    "farm": "Azienda agricola",
-    "activities": "Attività e dintorni",
-    "contacts": "Contatti"
+    "farmhouse": "Farmhouse",
+    "bed-and-breakfast": "B&B",
+    "farm": "Farm",
+    "point-of-sale": "Point of sale",
+    "events": "Events",
+    "surroundings": "Surroundings",
+    "contacts": "Contact us"
   },
-  "homepage": {
-    "surtitle": "Agriturismo",
-    "title": "Il Barchetto",
-    "subtitle": "Benvenuti",
-    "content": [
-      "Il Barchetto si trova a settecento metri di altezza sui monti che fanno da cornice al lago d'Orta, un'area ricca di storia e natura dalle bellezze paesaggistiche incontaminate.",
-      "Nato dalle ceneri di una stalla ottocentesca, è stato recentemente restaurato secondo le antiche tecniche architettoniche locali ed ha riacquistato l'antico splendore di un tempo.",
-      "Immerso nel verde dei boschi, vi aspetterà un posto in cui si fondono i suoni della natura e degli animali che vi abitano, ideale per trascorrere giornate nel relax più totale e trovare la pace e la tranquillità giusta per riprendere la vita frenetica di tutti i giorni.",
-      "Un'oasi ideale per allontanarsi dallo stress, un'esperienza capace farvi godere di quei suoni, di quegli odori e sapori che la città vi ha fatto dimenticare, o non vi ha fatto mai conoscere!",
-      "Se il vostro desiderio è quello di trovarvi in un ambiente completamente rustico e accogliente non resterete delusi. Tra le mura in granito locale, antiche travi in legno recuperate e restaurate maniacalmente da ciò che rimaneva della stalla, pavimento in piode e un calorosissimo caminetto in pietra potrete scoprire il piacere della nostra cucina, improntata sulla genuinità dei nostri prodotti agricoli.",
-      "A tavola riscoprirete gli antichi sapori della cucina di un tempo con prodotti tipici del luogo derivati dalla nostra produzione, verdure appena raccolte dall'orto e carni deliziose allevate con cura ed amore, per garantirvi piatti sempre freschi e di prima qualità."
-    ]
+  "menu": {
+    "title": "Menus",
+    "footnotes": "*Alcuni prodotti potrebbero essere congelati all'origine"
   },
   "privacy": {
     "title": "Privacy policy e cookies",

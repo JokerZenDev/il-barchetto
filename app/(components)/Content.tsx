@@ -7,16 +7,28 @@ export default function Content({
 }) {
 	return (
 		<div
-			className='z-3 relative mt-[-5rem] bg-white mx-2.5 lg:mx-32 p-6 lg:p-12 rounded'
+			className='z-3 relative mt-[-5rem] bg-white mx-2.5 lg:mx-32 p-4 md:p-6 lg:p-12 rounded'
 			style={{
 				boxShadow:
 					"0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
 			}}
 		>
-			<div className='w-full flex flex-col gap-6'>
-				{title && <h2 className='text-3xl font-bold'>{title}</h2>}
-				{children}
-			</div>
+			<ContentBody title={title}>{children}</ContentBody>
+		</div>
+	)
+}
+
+export const ContentBody = ({
+	title,
+	children,
+}: {
+	title?: string
+	children: React.ReactNode
+}) => {
+	return (
+		<div className='w-full flex flex-col gap-6'>
+			{title && <h2 className='text-3xl font-bold'>{title}</h2>}
+			{children}
 		</div>
 	)
 }
