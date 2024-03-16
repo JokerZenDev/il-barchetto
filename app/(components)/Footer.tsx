@@ -56,7 +56,7 @@ export default function Footer({
 				</ul>
 				<div className='relative w-full min-h-[200px]'>
 					<Image
-						src='/feasr.jpg'
+						src='/images/feasr.jpg'
 						alt='FEASR'
 						fill={true}
 						objectFit='contain'
