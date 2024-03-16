@@ -3,13 +3,13 @@ import { getDictionary } from "../../(helpers)/dictionaries"
 import { Page } from "../../page"
 import SanityPage from "../../(components)/SanityPage"
 
-export default async function BedAndBreakfast({
+export default async function Farmhouse({
 	params: { lang },
 }: {
 	params: { lang: string }
 }) {
 	const homepageData =
-		await client.fetch<Page>(`*[_type == "translation.metadata" && slug.current == "bed-and-breakfast"][0].translations[_key=="${lang}"][0].value->{
+		await client.fetch<Page>(`*[_type == "translation.metadata" && slug.current == "farmhouse"][0].translations[_key=="${lang}"][0].value->{
 		_id,
 		language,
 		title,
