@@ -8,7 +8,7 @@ export default function Main({
 	img,
 	subtitle,
 	contentTitle,
-	size = "lg",
+	size = "sm",
 }: {
 	children: React.ReactNode
 	surtitle?: string

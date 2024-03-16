@@ -11,7 +11,7 @@ export default function Hero({
 	title,
 	img,
 	subtitle,
-	size
+	size,
 }: {
 	surtitle?: string
 	title: string
@@ -21,7 +21,9 @@ export default function Hero({
 }) {
 	return (
 		<div
-			className={`relative flex m-0 ${size === "lg" ? "h-[90vh]" : "h-[50vh]"} max-h-[1000px] items-center justify-center ${satisfy.className}`}
+			className={`relative flex m-0 ${
+				size === "lg" ? "h-[90vh]" : "h-[50vh]"
+			} max-h-[1000px] items-center justify-center ${satisfy.className}`}
 		>
 			{img && (
 				<Image
@@ -33,16 +35,18 @@ export default function Hero({
 					className='z-0'
 				/>
 			)}
-			<div className='text-white mx-4 lg:mx-44 w-full flex flex-col gap-1 lg:gap-2 z-[1]'>
-				{surtitle && (
-					<span className='text-3xl lg:text-4xl font-thin'>
-						{surtitle}
-					</span>
-				)}
-				<h1 className='text-5xl lg:text-7xl'>{title}</h1>
-				{subtitle && (
-					<span className='text-3xl lg:text-4xl'>{subtitle}</span>
-				)}
+			<div className='w-full h-full flex bg-black/30 justify-center items-center z-[1]'>
+				<div className='text-white mx-4 lg:mx-44 w-full flex flex-col gap-1 lg:gap-2 z-[1]'>
+					{surtitle && (
+						<span className='text-3xl lg:text-4xl font-thin'>
+							{surtitle}
+						</span>
+					)}
+					<h1 className='text-5xl lg:text-7xl'>{title}</h1>
+					{subtitle && (
+						<span className='text-3xl lg:text-4xl'>{subtitle}</span>
+					)}
+				</div>
 			</div>
 		</div>
 	)

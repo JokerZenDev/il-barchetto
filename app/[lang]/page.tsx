@@ -35,6 +35,8 @@ export default async function Home({
 		}
 	)
 
+	homepageData.hero.size = "lg"
+
 	const dict = await getDictionary(lang)
 
 	return <SanityPage dict={dict} lang={lang} data={homepageData} />

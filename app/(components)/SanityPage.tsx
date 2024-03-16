@@ -24,7 +24,7 @@ export default function SanityPage({
 				subtitle={data.hero.subtitle}
 				img={data.hero.image && data.hero.image.imageUrl}
 				contentTitle={data.contentTitle}
-				size={data.hero.size || "lg"}
+				size={data.hero.size || "sm"}
 			>
 				{data.blockContent && (
 					<div className='flex flex-col gap-4 text-justify'>
