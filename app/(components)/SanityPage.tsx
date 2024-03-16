@@ -34,7 +34,7 @@ export default function SanityPage({
 				{data.content && (
 					<div className='flex flex-col gap-20 text-center'>
 						{data.content.map((item, key) => (
-							<ContentBody title={item.contentTitle}>
+							<ContentBody title={item.contentTitle} key={key}>
 								<MyPortableText value={item.blockContent} />
 							</ContentBody>
 						))}
