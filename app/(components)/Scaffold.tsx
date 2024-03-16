@@ -1,7 +1,7 @@
 import ContactsFooter from "./ContactsFooter";
 import Footer from "./Footer";
-import Header from "./Header";
-import Locales from "./Locales";
+import Header from "./Header/Header";
+import Locales from "./Header/Locales";
 
 export default function Scaffold({
   lang,
@@ -21,7 +21,7 @@ export default function Scaffold({
       </Header>
       {children}
       <Footer lang={lang} dictHeader={dictHeader} dictFooter={dictFooter} />
-      <ContactsFooter />
+      <ContactsFooter lang={lang} />
     </>
   );
 }

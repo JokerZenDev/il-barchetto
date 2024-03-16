@@ -6,16 +6,18 @@ import { FiMenu, FiX } from "react-icons/fi";
 export default function Menu({
   lang,
   dictHeader,
+  isOpen,
+  setIsOpen,
   children,
 }: {
   lang: string;
   dictHeader: any;
+  isOpen: boolean;
+  setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
   children: React.ReactNode;
 }) {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <div className="flex gap-4 lg:gap-6">
+    <div className="flex justify-between gap-4 lg:gap-6 w-full">
       <nav
         className={`${
           isOpen ? "flex" : "hidden"
@@ -24,7 +26,7 @@ export default function Menu({
         {Object.keys(dictHeader).map((key: string) => (
           <a
             key={key}
-            className="hover:underline"
+            className="hover:underline whitespace-nowrap"
             href={`/${lang}/${key}`}
             aria-label={dictHeader[key]}
           >
