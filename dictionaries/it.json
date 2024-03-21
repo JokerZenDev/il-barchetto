@@ -1,4 +1,33 @@
 {
+  "b&b": {
+    "header": [
+      "Trattamento",
+      "Prezzo"
+    ],
+    "rows": [
+      [
+        "Camera singola",
+        "€ 70"
+      ],
+      [
+        "Camera doppia",
+        "€ 90"
+      ],
+      [
+        "Camera tripla",
+        "€ 110"
+      ],
+      [
+        "Camera quadrupla",
+        "€ 120"
+      ]
+    ],
+    "footer": [
+      "La struttura mette a disposizione numerosi servizi convenzionati, per rendere ancor più esclusivo e rilassante il vostro soggiorno",
+      "Per soggiorni superiori a due notti possibilità di trattamento mezza pensione o pensione completa",
+      "I vostri amici a quattro zampe da noi sono benvenuti, per cani di media e grossa taglia costo spese di pulizia  10 € a notte"
+    ]
+  },
   "contactUs": {
     "title": "Contattaci",
     "form": {

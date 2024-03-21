@@ -1,4 +1,33 @@
 {
+  "b&b": {
+    "header": [
+      "Accommodation",
+      "Price"
+    ],
+    "rows": [
+      [
+        "Single room",
+        "€70"
+      ],
+      [
+        "Double room",
+        "€90"
+      ],
+      [
+        "Triple room",
+        "€110"
+      ],
+      [
+        "Quadruple room",
+        "€120"
+      ]
+    ],
+    "footer": [
+      "The facility offers numerous affiliated services to make your stay even more exclusive and relaxing",
+      "For stays longer than two nights, there is the possibility of opting for half-board or full-board",
+      "Your four-legged friends are welcome here, for medium and large-sized dogs a cleaning fee of €10 per night is charged"
+    ]
+  },
   "contactUs": {
     "title": "Contattaci",
     "form": {
