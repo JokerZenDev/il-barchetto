@@ -31,7 +31,7 @@ export default async function Home({
 	}`,
 		{},
 		{
-			next: { tags: ["homepage"] },
+			next: { tags: ["page"] },
 		}
 	)
 

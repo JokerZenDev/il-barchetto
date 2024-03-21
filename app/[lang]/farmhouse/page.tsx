@@ -8,8 +8,8 @@ export default async function Farmhouse({
 }: {
 	params: { lang: string }
 }) {
-	const homepageData =
-		await client.fetch<Page>(`*[_type == "translation.metadata" && slug.current == "farmhouse"][0].translations[_key=="${lang}"][0].value->{
+	const pageData = await client.fetch<Page>(
+		`*[_type == "translation.metadata" && slug.current == "farmhouse"][0].translations[_key=="${lang}"][0].value->{
 		_id,
 		language,
 		title,
@@ -28,9 +28,14 @@ export default async function Farmhouse({
 			"imageUrl": asset->url,
 			"alt": alt,
 		}
-	}`)
+	}`,
+		{},
+		{
+			next: { tags: ["page"] },
+		}
+	)
 
 	const dict = await getDictionary(lang)
 
-	return <SanityPage dict={dict} lang={lang} data={homepageData} />
+	return <SanityPage dict={dict} lang={lang} data={pageData} />
 }

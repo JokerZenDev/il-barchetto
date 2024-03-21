@@ -8,11 +8,17 @@ export default async function Menu({
 }: {
 	params: { lang: string }
 }) {
-	const menuData = await client.fetch<Menu[]>(`*[_type == "menu"]{
+	const menuData = await client.fetch<Menu[]>(
+		`*[_type == "menu"]{
 		_id,
 		title,
 		blockContent,
-	}`)
+	}`,
+		{},
+		{
+			next: { tags: ["menu"] },
+		}
+	)
 
 	const dict = await getDictionary(lang)
 
@@ -36,5 +42,12 @@ export default async function Menu({
 		content: contentData,
 	}
 
-	return <SanityPage dict={dict} lang={lang} data={data} footnotes={dict.menu.footnotes} />
+	return (
+		<SanityPage
+			dict={dict}
+			lang={lang}
+			data={data}
+			footnotes={dict.menu.footnotes}
+		/>
+	)
 }
