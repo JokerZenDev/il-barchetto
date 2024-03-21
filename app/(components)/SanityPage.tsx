@@ -33,7 +33,7 @@ export default function SanityPage({
 				size={data.hero.size || "sm"}
 			>
 				{data.blockContent && (
-					<div className='flex flex-col gap-4 text-center'>
+					<div className='flex flex-col my-14 gap-24 text-center'>
 						<MyPortableText value={data.blockContent} />
 					</div>
 				)}
