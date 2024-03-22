@@ -1,19 +1,7 @@
 import { FaTripadvisor } from "react-icons/fa"
-import { FiInstagram } from "react-icons/fi"
+import { FiFacebook, FiInstagram } from "react-icons/fi"
 import Image from "next/image"
-
-const socials = [
-	{
-		icon: <FaTripadvisor />,
-		link: "https://www.tripadvisor.it/Hotel_Review-g187514-d117249-Reviews-Agrituriso_Il_Barchetto-Brescia_Lombardy.html",
-		name: "Tripadvisor",
-	},
-	{
-		icon: <FiInstagram />,
-		link: "https://www.instagram.com/agriturismobarchetto/",
-		name: "Instagram",
-	},
-]
+import Socials from "./Socials"
 
 export default function Footer({
 	lang,
@@ -70,23 +58,7 @@ export default function Footer({
 					Agriturismo Il Barchetto | &copy; {new Date().getFullYear()}{" "}
 					{dictFooter.copyright}
 				</p>
-				<div className='flex items-center gap-2'>
-					{dictFooter.followUS}:{" "}
-					<ul className='flex gap-2 text-xl'>
-						{socials.map((social, key) => (
-							<li key={key}>
-								<a
-									href={social.link}
-									target='_blank'
-									rel='noreferrer'
-									aria-label={social.name}
-								>
-									{social.icon}
-								</a>
-							</li>
-						))}
-					</ul>
-				</div>
+				<Socials dictFooter={dictFooter} />
 			</div>
 		</footer>
 	)

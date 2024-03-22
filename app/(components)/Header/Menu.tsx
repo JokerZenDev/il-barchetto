@@ -1,8 +1,8 @@
 "use client"
 
 import Image from "next/image"
-import { useState } from "react"
 import { FiMenu, FiX } from "react-icons/fi"
+import Socials from "../Socials"
 
 export default function Menu({
 	lang,
@@ -43,6 +43,15 @@ export default function Menu({
 							{dictHeader[key]}
 						</a>
 					))}
+					<div className='mt-6 p-4 flex gap-6 lg:hidden'>
+						<Socials dictFooter={dictHeader} moreSpace={true} />
+					</div>
+					<div className='border-t border-white p-4 text-sm flex flex-col items-center lg:hidden'>
+						<span>{dictHeader.contacts}</span>
+						<span>Via per Boleto, 28894 Madonna del Sasso (VB)</span>
+						<span>T. +39 347 9475771</span>
+						<span>alpebarchetto@gmail.com</span>
+					</div>
 				</div>
 			</nav>
 			<div className={`z-10 lg:block ${isOpen ? "block" : "hidden"}`}>
@@ -51,11 +60,15 @@ export default function Menu({
 			<button
 				onClick={() => setIsOpen(!isOpen)}
 				className={`relative z-20 flex items-center text-2xl lg:hidden ${
-          isOpen ? "text-white" : ""
-        }`}
+					isOpen ? "text-white" : ""
+				}`}
 				name='menu'
 			>
-				{isOpen ? <FiX className='w-8 h-8' /> : <FiMenu className='w-8 h-8' />}
+				{isOpen ? (
+					<FiX className='w-8 h-8' />
+				) : (
+					<FiMenu className='w-8 h-8' />
+				)}
 			</button>
 		</div>
 	)

@@ -24,7 +24,7 @@ export default function Header({
 
 	return (
 		<header
-			className={`fixed left-0 right-0 top-0 z-10 flex items-center justify-between p-6 transition-colors duration-300 uppercase font-light text-3xl lg:text-xl ${
+			className={`fixed left-0 right-0 top-0 z-10 flex items-center justify-between p-4 lg:p-6 transition-colors duration-300 uppercase font-light text-3xl lg:text-xl ${
 				isScrolled
 					? `bg-white ${isOpen && "text-white"} text-black`
 					: "bg-transparent text-white"
