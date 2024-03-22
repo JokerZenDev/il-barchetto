@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { FiMenu, FiX } from "react-icons/fi"
 import Socials from "../Socials"
+import { useEffect, useState } from "react"
 
 export default function Menu({
 	lang,
@@ -17,12 +18,26 @@ export default function Menu({
 	setIsOpen: React.Dispatch<React.SetStateAction<boolean>>
 	children: React.ReactNode
 }) {
+	const [isVisible, setIsVisible] = useState(false)
+
+	useEffect(() => {
+		if (isOpen) {
+			setIsVisible(true)
+		}
+	}, [isOpen])
+
+	useEffect(() => {
+		if (!isVisible) {
+			setTimeout(() => setIsOpen(false), 300)
+		}
+	}, [isVisible])
+
 	return (
 		<div className='flex justify-between gap-4 lg:gap-6 w-full'>
 			<nav
 				className={`${
 					isOpen ? "flex text-white" : "hidden"
-				} fixed left-0 right-0 top-0 z-10 lg:flex lg:relative`}
+				} fixed top-0 z-10 lg:flex lg:opacity-100 lg:left-0 lg:right-0 lg:relative ${isVisible ? "left-0 right-0 opacity-100" : "left-[100%] right-[-100%] opacity-5"} transition-all duration-300 lg:transition-none`}
 			>
 				<Image
 					src={"/images/menu.jpeg"}
@@ -58,7 +73,7 @@ export default function Menu({
 				{children}
 			</div>
 			<button
-				onClick={() => setIsOpen(!isOpen)}
+				onClick={() => isOpen ? setIsVisible(false) : setIsOpen(true)}
 				className={`relative z-20 flex items-center text-2xl lg:hidden ${
 					isOpen ? "text-white" : ""
 				}`}
