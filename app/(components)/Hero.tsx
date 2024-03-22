@@ -1,7 +1,7 @@
-import { Satisfy } from "next/font/google"
+import { Agdasima } from "next/font/google"
 import Image from "next/image"
 
-const satisfy = Satisfy({
+const font = Agdasima({
 	subsets: ["latin"],
 	weight: "400",
 })
@@ -22,8 +22,8 @@ export default function Hero({
 	return (
 		<div
 			className={`relative flex m-0 ${
-				size === "lg" ? "h-[90vh]" : "h-[50vh]"
-			} max-h-[1000px] items-center justify-center ${satisfy.className}`}
+				size === "lg" ? "h-[100vh]" : "h-[50vh]"
+			} max-h-[1000px] items-center justify-center ${font.className}`}
 		>
 			{img && (
 				<Image

@@ -1,13 +1,8 @@
 "use client"
 
-import { Satisfy } from "next/font/google"
 import Menu from "./Menu"
 import { useEffect, useState } from "react"
-
-const satisfy = Satisfy({
-	subsets: ["latin"],
-	weight: "400",
-})
+import Image from "next/image"
 
 export default function Header({
 	lang,
@@ -29,18 +24,38 @@ export default function Header({
 
 	return (
 		<header
-			className={`fixed left-0 right-0 top-0 z-10 flex items-center justify-between px-4 py-6 text-white transition-colors duration-300 ${
-				isScrolled ? "bg-black" : "bg-transparent"
+			className={`fixed left-0 right-0 top-0 z-10 flex items-center justify-between p-6 transition-colors duration-300 uppercase font-light text-3xl lg:text-xl ${
+				isScrolled
+					? `bg-white ${isOpen && "text-white"} text-black`
+					: "bg-transparent text-white"
 			}`}
 		>
 			<a
 				href={`/${lang}`}
-				className={`${
-					satisfy.className
-				} z-10 text-2xl lg:block w-full ${isOpen ? "hidden" : "block"}`}
+				className={`z-10 text-2xl lg:block w-full ${
+					isOpen ? "hidden" : "block"
+				}`}
 				aria-label='homepage'
 			>
-				Agriturismo Il Barchetto
+				{isScrolled && (
+					<Image
+						src='/images/logo.png'
+						alt='logo'
+						width={150}
+						height={100}
+						className=''
+					/>
+				)}
+				{!isScrolled && (
+					<Image
+						src='/images/logo_white.png'
+						alt='logo'
+						width={150}
+						height={100}
+						className=''
+					/>
+				)}
+				{/* Agriturismo Il Barchetto */}
 			</a>
 			<div
 				className={`flex items-center justify-end gap-6 lg:justify-start ${

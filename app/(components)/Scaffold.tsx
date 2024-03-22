@@ -17,7 +17,7 @@ export default function Scaffold({
   return (
     <>
       <Header lang={lang} dictHeader={dictHeader}>
-        <Locales />
+        <Locales lang={lang} />
       </Header>
       {children}
       <Footer lang={lang} dictHeader={dictHeader} dictFooter={dictFooter} />

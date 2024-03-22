@@ -1,9 +1,9 @@
 import type { Metadata } from "next"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Inter } from "next/font/google"
+import { Agdasima } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const font = Agdasima({ subsets: ["latin"], weight: "400" })
 
 export const metadata: Metadata = {
 	title: "Agriturismo Il Barchetto | Madonna del Sasso (VB)",
@@ -42,7 +42,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={inter.className}>
+			<body className={font.className}>
 				{children}
 				<SpeedInsights />
 			</body>
