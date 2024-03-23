@@ -20,6 +20,7 @@ type Page = {
 	content?: {
 		contentTitle?: string
 		blockContent: TypedObject[]
+		body?: string[]
 	}[]
 	gallery?: {
 		alt: string

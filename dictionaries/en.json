@@ -65,146 +65,146 @@
     "title": "Menus",
     "footnotes": "*Alcuni prodotti potrebbero essere congelati all'origine"
   },
-  "privacy": {
-    "title": "Privacy policy e cookies",
+  "cookiePolicy": {
+    "title": "Privacy Policy and Cookies",
     "content": [
       {
-        "title": "Uno sguardo alla nostra Privacy Policy",
+        "contentTitle": "An Overview of Our Privacy Policy",
         "body": [
-          "In questa pagina riassumiamo i passaggi più importanti della nostra Privacy Policy. Per maggiori informazioni al riguardo può consultare la nostra Privacy Policy completa."
+          "On this page, we summarize the most important steps of our Privacy Policy. For more information, you can consult our complete Privacy Policy."
         ]
       },
       {
-        "title": "Quali dati raccogliamo",
+        "contentTitle": "What Data We Collect",
         "body": [
-          "Raccogliamo informazioni che la riguardano quando interagisce con noi attraverso  l’invio di email  o la compilazione di form presenti sul sito web."
+          "We collect information about you when you interact with us through sending emails or filling out forms on the website."
         ]
       },
       {
-        "title": "Quale uso facciamo elle Informazioni raccolte",
+        "contentTitle": "How We Use the Collected Information",
         "body": [
-          "Usiamo i Suoi dati personali per rispondere alle Sue richieste e/o. AGRITURISMO IL BARCHETTO non venderà o comunque comunicherà dati personali che la riguardano a terze parti senza Suo esplicito consenso, salvo quando necessario per fornirle il servizio richiesto."
+          "We use your personal data to respond to your requests. AGRITURISMO IL BARCHETTO will not sell or otherwise disclose your personal data to third parties without your explicit consent, except when necessary to provide you with the requested service."
         ]
       },
       {
-        "title": "I Suoi diritti",
+        "contentTitle": "Your Rights",
         "body": [
-          "E' Suo diritto, fra l'altro, conoscere i Suoi dati personali da noi trattati nonché richiederne la integrazione, rettifica o cancellazione. Per esercitare tali diritti si può rivolgere  al seguente indirizzo di posta elettronica alpebarchetto@gmail.com. L'elenco completo dei Suoi diritti con le rispettive modalità d'esercizio è riportato nella nostra Privacy Policy completa."
+          "It is your right, among others, to know your personal data processed by us, as well as to request its integration, correction, or deletion. To exercise these rights, you can contact the following email address alpebarchetto@gmail.com. The complete list of your rights with the respective modes of exercise is detailed in our complete Privacy Policy."
         ]
       },
       {
-        "title": "Sicurezza",
+        "contentTitle": "Security",
         "body": [
-          "La sicurezza delle Informazioni che ci fornisce sarà garantita mediante l'adozione di tutte le misure minime di sicurezza previste dal Codice Privacy (DLgs 196/2003 e suo Allegato B)."
+          "The security of the information you provide will be guaranteed by adopting all the minimum security measures provided by the Privacy Code (Legislative Decree 196/2003 and its Annex B)."
         ]
       },
       {
-        "title": "Come contattarci",
+        "contentTitle": "How to Contact Us",
         "body": [
-          "Per ogni domanda o richiesta di chiarimenti ci può contattare all’email alpebarchetto@gmail.com."
+          "For any questions or requests for clarification, you can contact us at the email alpebarchetto@gmail.com."
         ]
       },
       {
-        "title": "La Privacy Policy di AGRITURISMO IL BARCHETTO",
+        "contentTitle": "The Privacy Policy of AGRITURISMO IL BARCHETTO",
         "body": [
-          "La Sua privacy è per noi molto importante, per questo desideriamo comunicarLe le modalità con le quali raccogliamo e usiamo le informazioni che La riguardano",
-          "AGRITURISMO IL BARCHETTO, presta da sempre particolare attenzione al trattamento ed alla protezione dei dati personali dei propri Clienti, Fornitori, Collaboratori e di tutti coloro coi quali entra in rapporto.",
-          "Per tale motivo, al fine di garantire il massimo rispetto della normativa,  DLgs. 30 giugno 2003 n. 196, la nostra Organizzazione si è data un’organizzazione specifica adottando un’idonea AGRITURISMO IL BARCHETTO si riserva, inoltre, il diritto di modificare la presente Privacy Policy in qualsiasi momento: La invitiamo, pertanto, a tornare su questa pagina di frequente al fine di verificare eventuali modiche.",
-          "L’utilizzo del sito www.agriturismoilbarchetto.it  implica l’accettazione della nostra Privacy Policy, così come risulta aggiornata di volta in volta.",
-          "Il Titolare del trattamento AGRITURISMO IL BARCHETTO, con sede legale in Via per Boleto, 28894 Madonna del Sasso (VB), nel ringraziarLa per averci fornito i Suoi dati personali, porta a Sua conoscenza le finalità e le modalità del trattamento cui essi sono destinati. Il trattamento si basa sempre su principi di liceità e correttezza in ottemperanza a tutte le vigenti normative.La presente Privacy Policy è data anche come Informativa ai sensi dell’art. 13 del DLgs. 196/03 (normativa italiana sul trattamento dei dati personali in ottemperanza alla direttiva 95-46–CE) a coloro che interagiscono con i servizi web del Sito web di AGRITURISMO IL BARCHETTO, al fine della protezione dei dati personali, accessibili per via telematica a partire dagli indirizzi e www.agriturismoilbarchetto.it.",
-          "L’Informativa è resa per il Sito www.agriturismoilbarchetto.it e non anche per altri siti web eventualmente consultati dall’utente tramite link. Essi sono autonomi Titolari del trattamento e pertanto si rimanda ai siti in questione.",
-          "L’Informativa si ispira anche alla Raccomandazione n. 2/2001 che le autorità europee per la protezione dei dati personali, riunite nel Gruppo istituito dall’art. 29 della direttiva n. 95/46/CE, hanno adottato il 17 maggio 2001 per individuare alcuni requisiti minimi per la raccolta di dati personali on-line e, in particolare, le modalità, i tempi e la natura delle informazioni che i Titolari del trattamento devono fornire agli utenti quando questi si collegano a pagine web, indipendentemente dagli scopi del collegamento.Il trattamento dei dati da Lei liberamente conferiti sarà effettuato nel rispetto delle norme in vigore. In particolare, il trattamento sarà improntato ai principi di correttezza, liceità e trasparenza; pertinenza, completezza e non eccedenza; i dati saranno raccolti e registrati per le finalità di cui al punto seguente e conservati per un periodo strettamente necessario agli scopi."
+          "Your privacy is very important to us, which is why we want to inform you about the ways in which we collect and use information about you.",
+          "AGRITURISMO IL BARCHETTO has always paid particular attention to the processing and protection of personal data of its Customers, Suppliers, Collaborators, and all those with whom it comes into contact.",
+          "For this reason, to ensure maximum compliance with the law, Legislative Decree 30 June 2003 No. 196, our Organization has adopted a specific organization by adopting a suitable AGRITURISMO IL BARCHETTO also reserves the right to modify this Privacy Policy at any time: we therefore invite you to return to this page frequently in order to check for any changes.",
+          "The use of the site www.agriturismoilbarchetto.it implies acceptance of our Privacy Policy, as updated from time to time.",
+          "The Data Controller AGRITURISMO IL BARCHETTO, with registered office in Via per Boleto, 28894 Madonna del Sasso (VB), in thanking you for providing us with your personal data, informs you of the purposes and methods of the processing to which they are subject. The processing is always based on principles of legality and fairness in compliance with all current regulations. This Privacy Policy is also provided as information pursuant to art. 13 of Legislative Decree 196/03 (Italian legislation on the processing of personal data in compliance with Directive 95-46-EC) to those who interact with the web services of the AGRITURISMO IL BARCHETTO website, for the protection of personal data, accessible electronically from the addresses and www.agriturismoilbarchetto.it.",
+          "The Information is provided for the site www.agriturismoilbarchetto.it and not for other websites that may be consulted by the user via links. They are autonomous Data Controllers and therefore reference should be made to the sites in question.",
+          "The Information is also inspired by Recommendation no. 2/2001 that the European authorities for the protection of personal data, gathered in the Group established by art. 29 of directive no. 95/46/EC, adopted on 17 May 2001 to identify some minimum requirements for the collection of personal data online, and in particular, the methods, timing, and nature of the information that Data Controllers must provide to users when they connect to web pages, regardless of the purpose of the connection. The processing of data freely provided by you will be carried out in compliance with the regulations in force. In particular, the processing will be based on principles of correctness, lawfulness, and transparency; relevance, completeness, and not excess; the data will be collected and recorded for the purposes referred to in the following point and stored for a period strictly necessary for the purposes."
         ]
       },
       {
-        "title": "I Suoi diritti e i Responsabili del trattamento",
+        "contentTitle": "Your Rights and the Data Processors",
         "body": [
-          "Anzitutto Le ricordiamo che, ai sensi dell’art. 7 del Dlgs. 196/2003, di seguito riportato, è Suo diritto, fra l’altro, conoscere i Suoi dati personali da noi trattati nonché richiederne la integrazione, rettifica o cancellazione. Per esercitare tali diritti si può rivolgere al seguente indirizzo di posta elettronica alpebarchetto@gmail.com.",
-          "L’elenco completo di tutti i responsabili per il trattamento dei dati personali, da noi nominati, è reperibile contattandoci all’indirizzo email sopra indicato."
+          "First and foremost, we remind you that, in accordance with Art. 7 of Legislative Decree 196/2003, listed below, it is your right, among others, to know your personal data processed by us as well as to request its integration, correction, or deletion. To exercise these rights, you can contact the following email address alpebarchetto@gmail.com.",
+          "A complete list of all the data processors, appointed by us, can be found by contacting us at the above email address."
         ]
       },
       {
-        "title": "Art. 7 (Diritto di accesso ai dati personali ed altri diritti)",
+        "contentTitle": "Art. 7 (Right of Access to Personal Data and Other Rights)",
         "bullets": [
-          "L’interessato ha diritto di ottenere la conferma dell’esistenza o meno di dati personali che lo riguardano, anche se non ancora registrati, e la loro comunicazione in forma intelligibile.",
-          "L’interessato ha diritto di ottenere l’indicazione: a) dell’origine dei dati personali; b) delle finalità e modalità del trattamento; c) della logica applicata in caso di trattamento effettuato con l’ausilio di strumenti elettronici; d) degli estremi identificativi del titolare, dei Responsabili e del rappresentante designato ai sensi dell’articolo 5, comma 2; e) dei soggetti o delle categorie di soggetti ai quali i dati personali possono essere comunicati o che possono venirne a conoscenza in qualità di rappresentante designato nel territorio dello Stato, di Responsabili o Incaricati.",
-          "L’interessato ha diritto di ottenere: a) l’aggiornamento, la rettificazione ovvero, quando vi ha interesse, l’integrazione dei dati; b) la cancellazione, la trasformazione in forma anonima o il blocco dei dati trattati in violazione di legge, compresi quelli di cui non è necessaria la conservazione in relazione agli scopi per i quali i dati sono stati raccolti o successivamente trattati; c) l’attestazione che le operazioni di cui alle lettere a) e b) sono state portate a conoscenza, anche per quanto riguarda il loro contenuto, di coloro ai quali i dati sono stati comunicati o diffusi, eccettuato il caso in cui tale adempimento si rivela impossibile o comporta un impiego di mezzi manifestamente sproporzionato rispetto al diritto tutelato.",
-          "L’interessato ha diritto di opporsi, in tutto o in parte: a) per motivi legittimi al trattamento dei dati personali che lo riguardano, ancorché pertinenti allo scopo della raccolta; b) al trattamento di dati personali che lo riguardano a fini di invio di materiale pubblicitario o di vendita diretta o per il compimento di ricerche di mercato o di comunicazione commerciale."
+          "The data subject has the right to obtain confirmation of the existence or not of personal data concerning him or her, even if not yet recorded, and their communication in an intelligible form.",
+          "The data subject has the right to obtain information about: a) the origin of the personal data; b) the purposes and methods of processing; c) the logic applied in case of processing carried out with the aid of electronic instruments; d) the identity of the owner, managers, and the designated representative according to Article 5, paragraph 2; e) the entities or categories of entity to whom or which the personal data may be communicated and who or which may get to know said data in their capacity as designated representative(s) in the State’s territory, data processor(s) or person(s) in charge of the processing.",
+          "The data subject has the right to obtain: a) updating, rectification, or, where interested therein, integration of the data; b) erasure, anonymization, or blocking of data that have been processed unlawfully, including data whose retention is unnecessary for the purposes for which they have been collected or subsequently processed; c) certification to the effect that the operations as per letters a) and b) have been notified, as also related to their contents, to the entities to whom or which the data were communicated or disseminated, unless this requirement proves impossible or involves a manifestly disproportionate effort compared with the right that is to be protected.",
+          "The data subject has the right to object, in whole or in part: a) on legitimate grounds, to the processing of personal data concerning him/her, even though they are relevant to the purpose of the collection; b) to the processing of personal data concerning him/her for the purpose of sending advertising materials or direct selling or for carrying out market research or commercial communication."
         ]
       },
       {
-        "title": "Natura dei dati trattati",
+        "contentTitle": "Nature of Data Processed",
         "body": [
-          "AGRITURISMO IL BARCHETTO tratta i Suoi dati personali necessari per la prestazione del servizio richiesto, ovvero per lo svolgimento dei rapporti contrattuali, in essere o futuri, con la nostra Organizzazione. Non siamo in possesso di alcun Vostro dato qualificabile come sensibile (art. 4 lettera d del codice) o giudiziario (art. 4 lettera e del codice)."
+          "AGRITURISMO IL BARCHETTO processes your personal data necessary for the provision of the requested service, or for the performance of contractual relations, present or future, with our Organization. We do not possess any data that can be classified as sensitive (Art. 4 letter d of the code) or judicial (Art. 4 letter e of the code)."
         ]
       },
       {
-        "title": "Finalità del trattamento",
+        "contentTitle": "Purpose of Processing",
         "body": [
-          "I Suoi dati vengono trattati in relazione alle esigenze contrattuali, ed ai conseguenti adempimenti degli obblighi legali e fiscali.",
-          "I dati verranno trattati per tutta la durata del rapporto contrattuale e successivamente solo per l’espletamento di obblighi di legge e per finalità amministrative e commerciali."
+          "Your data is processed in relation to contractual needs and the consequent fulfillment of legal and fiscal obligations.",
+          "The data will be processed for the duration of the contractual relationship and subsequently only for the fulfillment of legal obligations and for administrative and commercial purposes."
         ]
       },
       {
-        "title": "Opposizione al trattamento per finalità commerciali: opt-out",
+        "contentTitle": "Opposition to Processing for Commercial Purposes: Opt-out",
         "body": [
-          "Le coordinate di posta elettronica o cartacea da Lei fornite potranno essere utilizzate da AGRITURISMO IL BARCHETTO ai fini dell’invio diretto di proprio materiale pubblicitario o di vendita diretta o per il compimento di proprie ricerche di mercato o di comunicazione commerciale. Tale attività promozionale potrà riguardare solo beni e servizi analoghi a quelli oggetto del rapporto contrattuale.",
-          "Le rammentiamo che, al momento della raccolta dei Suoi dati da parte nostra e in occasione di ogni comunicazione effettuata per le menzionate finalità, potrà opporsi al trattamento, semplicemente cliccando sull’apposito link in calce alla email ricevuta oppure  contattandoci all’indirizzo di posta elettronica alpebarchett@gmail.com.",
-          "Dell’interruzione del trattamento Le verrà dato immediato riscontro."
+          "The email or paper contact details you provide may be used by AGRITURISMO IL BARCHETTO for the purpose of direct sending of its advertising material or direct selling or for carrying out market research or commercial communication. Such promotional activity will only concern goods and services similar to those which are the subject of the contractual relationship.",
+          "We remind you that, at the time of collecting your data and on the occasion of any communication made for the mentioned purposes, you may oppose the processing by simply clicking on the appropriate link at the bottom of the email received or by contacting us at the email address alpebarchett@gmail.com.",
+          "You will be immediately notified of the cessation of processing."
         ]
       },
       {
-        "title": "Modalità del trattamento",
+        "contentTitle": "Mode of Processing",
         "body": [
-          "Il trattamento dei dati avviene mediante l’utilizzo di strumenti e procedure idonei a garantirne la sicurezza e la riservatezza e potrà essere effettuato sia mediante supporti cartacei sia attraverso l’ausilio di mezzi informatici."
+          "The processing of data is carried out using tools and procedures that ensure security and confidentiality and can be performed both through paper supports and with the aid of electronic means."
         ]
       },
       {
-        "title": "Obbligo o facoltà di conferire i dati",
+        "contentTitle": "Obligation or Option to Provide Data",
         "body": [
-          "Per quanto concerne i dati che siamo obbligati a conoscere, al fine di adempiere agli obblighi previsti da leggi, da regolamenti e dalla normativa comunitaria, ovvero da disposizioni impartite da Autorità a ciò legittimate dalla legge e da organi di vigilanza e controllo, il loro mancato conferimento da parte Sua comporta l’impossibilità di instaurare o proseguire il rapporto, nei limiti in cui tali dati sono necessari all’esecuzione dello stesso.",
-          "Per quanto riguarda i dati che non siamo obbligati a conoscere, il loro mancato ottenimento sarà da noi valutato di volta in volta, e determinerà le conseguenti decisioni, rapportate all’importanza per la nostra organizzazione dei dati richiesti e non conferiti."
+          "Regarding the data we are obliged to know in order to fulfill obligations prescribed by laws, regulations, and community norms, or provisions issued by authorities authorized by law and by supervisory and control bodies, their non-provision by you means that it is impossible to establish or continue the relationship, to the extent that such data is necessary for its execution.",
+          "As for the data we are not obliged to know, their non-acquisition will be evaluated by us from time to time, and will determine subsequent decisions, related to the importance for our organization of the requested data not provided."
         ]
       },
       {
-        "title": "Dati di navigazione web",
+        "contentTitle": "Web Browsing Data",
         "body": [
-          "I sistemi informatici e le procedure software preposte al funzionamento di questo sito web acquisiscono, nel corso del loro normale esercizio, alcuni dati personali la cui trasmissione è implicita nell’uso dei protocolli di comunicazione di Internet.",
-          "Si tratta di informazioni che non sono raccolte per essere associate a interessati identificati, ma che per loro stessa natura potrebbero, attraverso elaborazioni ed associazioni con dati detenuti da terzi, permettere di identificare gli utenti.",
-          "In questa categoria di dati rientrano gli indirizzi IP o i nomi a dominio dei computer utilizzati dagli utenti che si connettono al sito, gli indirizzi in notazione URI (Uniform Resource Identifier) delle risorse richieste, l’orario della richiesta, il metodo utilizzato nel sottoporre la richiesta al server, la dimensione del file ottenuto in risposta, il codice numerico indicante lo stato della risposta data dal server (buon fine, errore, ecc.) ed altri parametri relativi al sistema operativo e all’ambiente informatico dell’utente.",
-          "Questi dati vengono utilizzati al solo fine di ricavare informazioni statistiche anonime sull’uso del sito e per controllarne il corretto funzionamento, e vengono cancellati immediatamente dopo l’elaborazione. I dati potrebbero essere utilizzati per l’accertamento di Responsabilità in caso di ipotetici reati informatici ai danni del sito."
+          "The computer systems and software procedures used to operate this website acquire, during their normal operation, some personal data whose transmission is implicit in the use of Internet communication protocols.",
+          "This information is not collected to be associated with identified interested parties, but by its very nature could, through processing and association with data held by third parties, allow users to be identified.",
+          "This category of data includes IP addresses or domain names of computers used by users connecting to the site, URI (Uniform Resource Identifier) addresses of the requested resources, the time of the request, the method used to submit the request to the server, the size of the file received in response, the numerical code indicating the status of the response given by the server (successful, error, etc.) and other parameters relating to the user's operating system and computer environment.",
+          "These data are used only to obtain anonymous statistical information on the use of the site and to check its correct functioning, and are deleted immediately after processing. The data could be used to establish liability in case of hypothetical computer crimes against the site."
         ]
       },
       {
-        "title": "Dati forniti volontariamente dall’utente",
+        "contentTitle": "Data Provided Voluntarily by the User",
         "body": [
-          "L’invio facoltativo, esplicito e volontario di posta elettronica sul Sito www.agriturismoilbarchetto.it oppure la compilazione di appositi form, comporta la successiva acquisizione dell’indirizzo del mittente e dei dati personali necessari per rispondere alle richieste e/o fornire i servizi richiesti, nonché degli eventuali altri dati personali inseriti nella missiva (e negli allegati alla stessa) o nei form appositi.Le email ricevute sono archiviate a tempo indeterminato su un server protetto da opportune misure di sicurezza. L’interessato può esercitare tutti i diritti previsti dall’art. 7 D.Lgs. 196/2003 riportato in apertura della presente Privacy Policy, in particolare può conoscere quali suoi dati sono presenti nell’archivio e ottenerne la cancellazione, scrivendo all’indirizzo di posta elettronica alpebarchetto@gmail.com.",
-          "I dati saranno pertanto trattati in modalità informatica e telematica, per rispondere alle richieste e/o fornire il servizio richiesto. Il conferimento è sempre facoltativo e il mancato conferimento comporta solo l’impossibilità di dare seguito alle richieste."
+          "The optional, explicit, and voluntary sending of emails to the site www.agriturismoilbarchetto.it or the compilation of specific forms, entails the subsequent acquisition of the sender's address and the personal data necessary to respond to requests and/or provide the requested services, as well as any other personal data included in the message (and in its attachments) or in the specific forms. Emails received are stored indefinitely on a server protected by appropriate security measures. The interested party can exercise all the rights provided by art. 7 of Legislative Decree 196/2003 presented at the beginning of this Privacy Policy, in particular, they can know what their data is present in the archive and obtain its deletion by writing to the email address alpebarchetto@gmail.com.",
+          "Therefore, the data will be processed in electronic and telematic mode, to respond to requests and/or provide the requested service. The provision is always optional and the lack thereof only results in the inability to follow up on requests."
         ]
       },
       {
-        "title": "Cookies",
+        "contentTitle": "Cookies",
         "body": [
-          "Il sito www.agriturismoilbarchetto.it utilizza cookies finalizzati a Google Analytics, un servizio di analisi web fornito da Google, Inc. (“Google”).",
-          "Google Analytics utilizza dei “cookies”, che sono file di testo che vengono depositati sul Vostro computer per consentire al sito web di analizzare come gli utenti utilizzano il sito.",
-          "Le informazioni generate dal cookie sull’utilizzo del sito web da parte Vostra (compreso il Vostro indirizzo IP) verranno trasmesse a, e depositate presso i server di Google negli Stati Uniti. Google utilizzerà queste informazioni allo scopo di tracciare e esaminare il Vostro utilizzo del sito web, compilare report sulle attività del sito web per gli operatori del sito web e fornire altri servizi relativi alle attività del sito web e all’utilizzo di Internet.",
-          "Google può anche trasferire queste informazioni a terzi ove ciò sia imposto dalla legge o laddove tali terzi trattino le suddette informazioni per conto di Google. Google non assocerà il vostro indirizzo IP a nessun altro dato posseduto da Google. Potete rifiutarvi di usare i cookies selezionando l’impostazione appropriata sul vostro browser, ma ciò potrebbe impedirvi di utilizzare tutte le funzionalità di questo sito web. Utilizzando il presente sito web, voi acconsentite al trattamento dei Vostri dati da parte di Google per le modalità e i fini sopraindicati."
+          "The site www.agriturismoilbarchetto.it uses cookies for Google Analytics, a web analysis service provided by Google, Inc. (“Google”).",
+          "Google Analytics uses “cookies”, which are text files placed on your computer to help the website analyze how users use the site.",
+          "The information generated by the cookie about your use of the website (including your IP address) will be transmitted to, and stored by, Google on servers in the United States. Google will use this information for the purpose of tracking and examining your use of the website, compiling reports on website activity for website operators, and providing other services relating to website activity and internet usage.",
+          "Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Google’s behalf. Google will not associate your IP address with any other data held by Google. You may refuse the use of cookies by selecting the appropriate settings on your browser, however, please note that if you do this you may not be able to use the full functionality of this website. By using this website, you consent to the processing of your data by Google in the manner and for the purposes set out above."
         ]
       },
       {
-        "title": "Ambito di conoscenza e comunicazione dei Vostri dati",
+        "contentTitle": "Scope of Knowledge and Communication of Your Data",
         "body": [
-          "Possono venire a conoscenza dei Suoi dati, in qualità di Responsabili o Incaricati anche esterni del trattamento, nominati dalla scrivente Organizzazione, gli addetti alla contabilità, amministrazione, alla gestione operativa e i soggetti ausiliari allo svolgimento del nostro servizio (si citano a titolo indicativo le società specializzate nella gestione dei pagamenti online).",
-          "Informazioni che la riguardano potranno, inoltre, essere da noi comunicate a società controllanti, controllate o collegate ai sensi dell’articolo 2359 del codice civile ovvero a società sottoposte a comune controllo, per le finalità amministrativo contabili così come definite all’articolo 34, comma 1-ter DLgs 196/2003, ovvero quelle connesse allo svolgimento delle attività̀ di natura organizzativa, amministrativa, finanziaria e contabile, a prescindere dalla natura dei dati trattati.",
-          "In particolare, perseguono tali finalità̀ le attività̀ organizzative interne, quelle funzionali all’adempimento di obblighi contrattuali e precontrattuali, alla gestione del rapporto di lavoro in tutte le sue fasi, alla tenuta della contabilità̀ e all’applicazione delle norme in materia fiscale, sindacale, previdenziale-assistenziale, di salute, igiene e sicurezza sul lavoro.",
-          "Il trasferimento di informazioni che la riguardano anche temporaneo verso un Paese non appartenente all’Unione europea potrà avvenire solo se necessario per l’esecuzione di obblighi derivanti da un contratto del quale Lei è parte o per adempiere, prima della conclusione del contratto, a specifiche Sue richieste, ovvero per la conclusione o per l’esecuzione di un contratto stipulato a Suo favore."
+          "Your data may be made known, as Managers or Agents also external to the processing, appointed by our Organization, to the accounting, administration, operational management personnel, and subjects auxiliary to the performance of our service (including, for example, companies specializing in online payment management).",
+          "Information about you may also be communicated by us to controlling, controlled, or affiliated companies pursuant to Article 2359 of the Civil Code, or to companies under common control, for administrative and accounting purposes as defined in Article 34, paragraph 1-ter of Legislative Decree 196/2003, namely those related to the conduct of organizational, administrative, financial, and accounting activities, regardless of the nature of the data processed.",
+          "Specifically, such purposes include internal organizational activities, those functional to the fulfillment of contractual and pre-contractual obligations, to the management of the employment relationship in all its phases, to the keeping of accounts, and to the application of fiscal, union, welfare, health, hygiene, and workplace safety norms.",
+          "The transfer of information about you, even temporarily, to a country not belonging to the European Union may only occur if necessary for the execution of obligations deriving from a contract of which you are a part, or to fulfill, before the conclusion of the contract, specific requests made by you, or for the conclusion or execution of a contract concluded in your favor."
         ]
       },
       {
-        "title": "Luogo di trattamento dei dati e ambito di comunicazione o diffusione",
+        "contentTitle": "Data Processing Location and Scope of Communication or Dissemination",
         "body": [
-          "I dati connessi ai servizi web di questo sito verranno trasmessi e conservati in computer portatili  e successivamente trattati solo da personale tecnico incaricato del trattamento, oppure da eventuali incaricati di occasionali operazioni di manutenzione.",
-          "Nessun dato derivante dal servizio web viene comunicato o diffuso. I dati personali forniti volontariamente dagli utenti tramite email o compilazione di appositi form, sono utilizzati al solo fine di eseguire il servizio o la prestazione richiesta e sono comunicati a terzi nel solo caso in cui ciò sia a tal fine necessario."
+          "Data connected to the web services of this site will be transmitted and stored on laptops and subsequently processed only by technical personnel authorized to process, or by persons in charge of occasional maintenance operations.",
+          "No data deriving from the web service is communicated or disseminated. Personal data voluntarily provided by users through email or the completion of specific forms is used solely to perform the service or provision requested and is communicated to third parties only if this is necessary for that purpose."
         ]
       }
     ]
