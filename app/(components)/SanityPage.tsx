@@ -77,7 +77,7 @@ export default function SanityPage({
 					</div>
 				)}
 				{data.content && (
-					<div className='flex flex-col text-left gap-4'>
+					<div className='flex flex-col text-left gap-4 mt-8'>
 						{data.content.map((item, key) => (
 							<div key={key}>
 								<span className='text-xl'>

@@ -7,12 +7,12 @@ export default async function Page({
 	params: { lang: string }
 }) {
 	const dict = await getDictionary(lang)
-	return (
-		<SanityPage
-			dict={dict}
-			lang={lang}
-			data={dict.cookiePolicy}
-			theme='dark'
-		/>
-	)
+
+	const data = {
+		_id: "cookie-policy",
+		contentTitle: dict.cookiePolicy.title,
+		content: dict.cookiePolicy.content,
+	}
+
+	return <SanityPage dict={dict} lang={lang} data={data} theme='dark' />
 }
