@@ -7,16 +7,18 @@ export default function Scaffold({
   lang,
   dictHeader,
   dictFooter,
+  theme,
   children,
 }: {
   lang: string;
   dictHeader: any;
   dictFooter: any;
+  theme: "light" | "dark";
   children: React.ReactNode;
 }) {
   return (
     <>
-      <Header lang={lang} dictHeader={dictHeader}>
+      <Header lang={lang} dictHeader={dictHeader} theme={theme}>
         <Locales lang={lang} />
       </Header>
       {children}

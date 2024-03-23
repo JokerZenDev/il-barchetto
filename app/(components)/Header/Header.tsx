@@ -7,10 +7,12 @@ import Image from "next/image"
 export default function Header({
 	lang,
 	dictHeader,
+	theme,
 	children,
 }: {
 	lang: string
 	dictHeader: any
+	theme: "light" | "dark"
 	children: React.ReactNode
 }) {
 	const [isScrolled, setIsScrolled] = useState(false)
@@ -25,7 +27,7 @@ export default function Header({
 	return (
 		<header
 			className={`fixed left-0 right-0 top-0 z-20 flex items-center justify-between p-4 lg:p-6 transition-colors duration-300 uppercase font-light text-3xl lg:text-xl ${
-				isScrolled
+				isScrolled || theme === "dark"
 					? `bg-white ${isOpen && "text-white"} text-black`
 					: "bg-transparent text-white"
 			}`}
@@ -37,7 +39,7 @@ export default function Header({
 				}`}
 				aria-label='homepage'
 			>
-				{isScrolled && (
+				{(isScrolled || theme === "dark") && (
 					<Image
 						src='/images/logo.png'
 						alt='logo'
@@ -46,7 +48,7 @@ export default function Header({
 						className=''
 					/>
 				)}
-				{!isScrolled && (
+				{!isScrolled && theme === "light" && (
 					<Image
 						src='/images/logo_white.png'
 						alt='logo'

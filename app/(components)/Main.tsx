@@ -13,7 +13,7 @@ export default function Main({
 }: {
 	children: React.ReactNode
 	surtitle?: string
-	title: string
+	title?: string
 	img?: string
 	subtitle?: string
 	contentTitle?: string
@@ -22,8 +22,20 @@ export default function Main({
 }) {
 	return (
 		<main>
-			<Hero surtitle={surtitle} title={title} subtitle={subtitle} img={img} size={size} />
-			<Content title={contentTitle} subtitle={contentSubtitle}>{children}</Content>
+			{surtitle && title && subtitle && img ? (
+				<Hero
+					surtitle={surtitle}
+					title={title}
+					subtitle={subtitle}
+					img={img}
+					size={size}
+				/>
+			) : (
+				<div className='my-20 lg:my-12'></div>
+			)}
+			<Content title={contentTitle} subtitle={contentSubtitle}>
+				{children}
+			</Content>
 		</main>
 	)
 }

@@ -3,8 +3,8 @@ import { TypedObject } from "sanity"
 type Page = {
 	_id: string
 	language?: string
-	title: string
-	hero: {
+	title?: string
+	hero?: {
 		surtitle?: string
 		heading: string
 		subtitle?: string
