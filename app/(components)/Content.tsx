@@ -1,33 +1,36 @@
 export default function Content({
 	children,
 	title,
+	subtitle,
 }: {
 	children: React.ReactNode
 	title?: string
+	subtitle?: string
 }) {
 	return (
-		<div
-			className='relative bg-white p-4 md:p-6 lg:p-12'
-			// style={{
-			// 	boxShadow:
-			// 		"0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2)",
-			// }}
-		>
-			<ContentBody title={title}>{children}</ContentBody>
+		<div className='relative bg-white p-4 md:p-6 lg:p-12 my-8'>
+			<ContentBody title={title} subtitle={subtitle}>{children}</ContentBody>
 		</div>
 	)
 }
 
 export const ContentBody = ({
 	title,
+	subtitle,
 	children,
 }: {
 	title?: string
+	subtitle?: string
 	children: React.ReactNode
 }) => {
 	return (
-		<div className='w-full flex flex-col gap-6'>
-			{title && <h2 className='text-3xl font-bold'>{title}</h2>}
+		<div className='w-full flex flex-col'>
+			{title && <span className='text-4xl w-full text-center'>{title}</span>}
+			{subtitle && (
+				<span className='text-xl text-amber-900 uppercase w-full text-center'>
+					{subtitle}
+				</span>
+			)}
 			{children}
 		</div>
 	)

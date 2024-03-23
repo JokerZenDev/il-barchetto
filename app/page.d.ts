@@ -15,6 +15,7 @@ type Page = {
 		size?: "sm" | "lg"
 	}
 	contentTitle?: string
+	contentSubtitle?: string
 	blockContent?: TypedObject[]
 	content?: {
 		contentTitle?: string

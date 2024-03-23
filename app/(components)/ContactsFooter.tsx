@@ -2,7 +2,7 @@ import { MdMail, MdMailOutline, MdMap, MdPhone } from "react-icons/md"
 
 export default function ContactsFooter({ lang }: { lang: string }) {
 	return (
-		<div className='w-full h-14 bg-black'>
+		<div className='w-full h-14 bg-black text-xl'>
 			<div className='lg:hidden flex fixed w-full h-14 bottom-0 left-0 right-0 z-10 bg-slate-700 items-center'>
 				<a
 					href='tel:+393470123456'

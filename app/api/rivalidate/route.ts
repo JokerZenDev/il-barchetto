@@ -6,8 +6,6 @@ import type { NextRequest } from 'next/server'
 import { NextResponse } from 'next/server'
 import { parseBody } from 'next-sanity/webhook'
 
-export const runtime = 'edge'
-
 export async function POST(req: NextRequest) {
   try {
     const { isValidSignature, body } = await parseBody<BodyInit & { _type: string; }>(

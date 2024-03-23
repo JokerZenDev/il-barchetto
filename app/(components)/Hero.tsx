@@ -23,7 +23,7 @@ export default function Hero({
 		<div
 			className={`relative flex m-0 ${
 				size === "lg" ? "h-[100vh]" : "h-[50vh]"
-			} max-h-[1000px] items-center justify-center ${font.className}`}
+			} items-center justify-center ${font.className}`}
 		>
 			{img && (
 				<Image
@@ -37,15 +37,11 @@ export default function Hero({
 			)}
 			<div className='w-full h-full flex bg-black/30 justify-center items-center z-[1]'>
 				<div className='text-white mx-4 lg:mx-44 w-full flex flex-col gap-1 lg:gap-2 z-[1]'>
-					{surtitle && (
-						<span className='text-3xl lg:text-4xl font-thin'>
-							{surtitle}
-						</span>
-					)}
-					<h1 className='text-5xl lg:text-7xl'>{title}</h1>
-					{subtitle && (
-						<span className='text-3xl lg:text-4xl'>{subtitle}</span>
-					)}
+					<div className='text-5xl lg:text-7xl text-center flex flex-col gap-1 tracking-wide uppercase'>
+						<span>{surtitle}</span>
+						<span>{title}</span>
+						<span>{subtitle}</span>
+					</div>
 				</div>
 			</div>
 		</div>

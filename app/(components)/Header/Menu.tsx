@@ -28,7 +28,7 @@ export default function Menu({
 
 	useEffect(() => {
 		if (!isVisible) {
-			setTimeout(() => setIsOpen(false), 300)
+			setTimeout(() => setIsOpen(false), 150)
 		}
 	}, [isVisible])
 

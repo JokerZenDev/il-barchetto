@@ -30,10 +30,11 @@ export default function SanityPage({
 				subtitle={data.hero.subtitle}
 				img={data.hero.image && data.hero.image.imageUrl}
 				contentTitle={data.contentTitle}
-				size={data.hero.size || "sm"}
+				contentSubtitle={data.contentSubtitle}
+				size={data.hero.size || "lg"}
 			>
 				{data.blockContent && (
-					<div className='flex flex-col my-14 gap-24 text-center'>
+					<div className='flex flex-col my-8 gap-8 text-center text-xl'>
 						<MyPortableText value={data.blockContent} />
 					</div>
 				)}
@@ -41,21 +42,21 @@ export default function SanityPage({
 					<div className='w-full flex flex-col items-start gap-4'>
 						<table className='w-full max-w-3xl mx-auto'>
 							<thead>
-								<tr className="border-b">
-									<th className="p-2">{table.header[0]}</th>
-									<th className="p-2">{table.header[1]}</th>
+								<tr className='border-b'>
+									<th className='p-2'>{table.header[0]}</th>
+									<th className='p-2'>{table.header[1]}</th>
 								</tr>
 							</thead>
 							<tbody>
 								{table.rows.map((item, key) => (
-									<tr key={key} className="border-b">
-										<td className="p-2">{item[0]}</td>
-										<td className="p-2">{item[1]}</td>
+									<tr key={key} className='border-b'>
+										<td className='p-2'>{item[0]}</td>
+										<td className='p-2'>{item[1]}</td>
 									</tr>
 								))}
 							</tbody>
 						</table>
-						<ul className="list-disc flex flex-col gap-1 ml-4">
+						<ul className='list-disc flex flex-col gap-1 ml-4'>
 							{table.footer.map((item, key) => (
 								<li key={key}>{item}</li>
 							))}
@@ -63,7 +64,7 @@ export default function SanityPage({
 					</div>
 				)}
 				{data.content && (
-					<div className='flex flex-col gap-20 text-center'>
+					<div className='flex flex-col text-center'>
 						{data.content.map((item, key) => (
 							<ContentBody title={item.contentTitle} key={key}>
 								<MyPortableText value={item.blockContent} />

@@ -8,6 +8,7 @@ export default function Main({
 	img,
 	subtitle,
 	contentTitle,
+	contentSubtitle,
 	size = "sm",
 }: {
 	children: React.ReactNode
@@ -16,12 +17,13 @@ export default function Main({
 	img?: string
 	subtitle?: string
 	contentTitle?: string
+	contentSubtitle?: string
 	size?: "sm" | "lg"
 }) {
 	return (
 		<main>
 			<Hero surtitle={surtitle} title={title} subtitle={subtitle} img={img} size={size} />
-			<Content title={contentTitle}>{children}</Content>
+			<Content title={contentTitle} subtitle={contentSubtitle}>{children}</Content>
 		</main>
 	)
 }

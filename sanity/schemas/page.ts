@@ -28,6 +28,11 @@ export default {
 			title: 'Titolo contenuto',
 		},
 		{
+			name: 'contentSubtitle',
+			type: 'string',
+			title: 'Sottotitolo contenuto',
+		},
+		{
 			name: 'blockContent',
 			type: 'blockContent',
 			title: 'Contenuto',
