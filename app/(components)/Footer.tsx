@@ -27,7 +27,7 @@ export default function Footer({
 	const footerItems = [...menuItems, ...additionalItems]
 
 	return (
-		<footer className='mt-10 w-full bg-black text-white py-10 px-4 lg:px-44 flex flex-col gap-12'>
+		<footer className='w-full bg-black text-white py-10 px-4 lg:px-44 flex flex-col gap-12'>
 			<div className='flex flex-col gap-6 lg:grid lg:grid-cols-[1fr_1fr] lg:gap-16'>
 				<ul className='grid grid-cols-2 gap-2'>
 					{footerItems.map((item, key) => (
