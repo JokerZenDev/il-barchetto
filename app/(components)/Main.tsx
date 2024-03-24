@@ -22,7 +22,7 @@ export default function Main({
 }) {
 	return (
 		<main>
-			{surtitle && title && subtitle && img ? (
+			{title && img ? (
 				<Hero
 					surtitle={surtitle}
 					title={title}

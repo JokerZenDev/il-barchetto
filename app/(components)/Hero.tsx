@@ -35,7 +35,7 @@ export default function Hero({
 					className='z-0'
 				/>
 			)}
-			<div className='w-full h-full flex bg-black/30 justify-center items-center z-[1]'>
+			<div className='w-full h-full flex bg-black/40 justify-center items-center z-[1]'>
 				<div className='text-white mx-4 lg:mx-44 w-full flex flex-col gap-1 lg:gap-2 z-[1]'>
 					<div className='text-5xl lg:text-7xl text-center flex flex-col gap-1 tracking-wide uppercase'>
 						<span>{surtitle}</span>

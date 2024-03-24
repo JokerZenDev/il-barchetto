@@ -9,7 +9,7 @@ export default function Content({
 }) {
 	return (
 		<div
-			className='relative bg-auto bg-repeat bg-opacity-10 px-4 py-12 md:px-6 md:py-14 lg:px-12 lg:py-20'
+			className='relative bg-auto bg-repeat bg-opacity-10 px-4 py-12 md:px-6 md:py-14 lg:px-12 lg:py-20 w-full'
 			style={{
 				background:
 					'linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,.65)), url("/images/cement.jpg")',
@@ -32,7 +32,7 @@ export const ContentBody = ({
 	children: React.ReactNode
 }) => {
 	return (
-		<div className='w-full flex flex-col'>
+		<div className='w-full flex flex-col gap-6 max-w-[1024px] mx-auto'>
 			{title && (
 				<span className='text-4xl w-full text-center'>{title}</span>
 			)}

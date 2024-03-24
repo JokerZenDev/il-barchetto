@@ -47,7 +47,7 @@ export default function SanityPage({
 				size={data.hero?.size || "lg"}
 			>
 				{data.blockContent && (
-					<div className='flex flex-col my-8 gap-8 text-center text-xl'>
+					<div className='flex flex-col my-4 gap-6 text-center text-xl'>
 						<MyPortableText value={data.blockContent} />
 					</div>
 				)}
@@ -104,7 +104,7 @@ export default function SanityPage({
 						alt={img.alt}
 						width={1000}
 						height={1000}
-						className='w-full h-auto mt-12'
+						className='w-full h-auto mt-6'
 					/>
 				)}
 				{footnotes && (
