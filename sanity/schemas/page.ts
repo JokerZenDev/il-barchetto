@@ -33,8 +33,8 @@ export default {
 			title: 'Sottotitolo contenuto',
 		},
 		{
-			name: 'blockContent',
-			type: 'blockContent',
+			name: 'blocksContent',
+			type: 'content',
 			title: 'Contenuto',
 			validation: (Rule: any) => Rule.required(),
 		},

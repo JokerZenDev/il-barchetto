@@ -34,10 +34,10 @@ export const ContentBody = ({
 	return (
 		<div className='w-full flex flex-col gap-6 max-w-[1024px] mx-auto'>
 			{title && (
-				<span className='text-4xl w-full text-center'>{title}</span>
+				<span className='text-4xl w-full text-center tracking-wide'>{title}</span>
 			)}
 			{subtitle && (
-				<span className='text-xl text-amber-900 uppercase w-full text-center'>
+				<span className='text-xl text-amber-900 uppercase w-full text-center tracking-wide'>
 					{subtitle}
 				</span>
 			)}

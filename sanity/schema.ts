@@ -4,7 +4,9 @@ import page from './schemas/page'
 import hero from './schemas/hero'
 import gallery from './schemas/gallery'
 import menu from './schemas/menu'
+import content from './schemas/content'
+import newPage from './schemas/newPage'
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [page, hero, gallery, blockContent, menu],
+  types: [page, hero, gallery, blockContent, content, menu],
 }

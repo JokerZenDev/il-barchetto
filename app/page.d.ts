@@ -17,9 +17,17 @@ type Page = {
 	contentTitle?: string
 	contentSubtitle?: string
 	blockContent?: TypedObject[]
+	blocksContent?: {
+		title: string
+		blockContent: TypedObject[],
+		image?: {
+			alt: string
+			imageUrl: string
+		},
+	}[]
 	content?: {
 		contentTitle?: string
-		blockContent: TypedObject[]
+		blockContent?: TypedObject[]
 		body?: string[]
 	}[]
 	gallery?: {

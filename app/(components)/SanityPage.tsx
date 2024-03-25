@@ -46,11 +46,36 @@ export default function SanityPage({
 				contentSubtitle={data.contentSubtitle}
 				size={data.hero?.size || "lg"}
 			>
-				{data.blockContent && (
-					<div className='flex flex-col my-4 gap-6 text-center text-xl'>
-						<MyPortableText value={data.blockContent} />
-					</div>
-				)}
+				{data.blocksContent &&
+					data.blocksContent.map((block, key) => (
+						<div className='grid grid-cols-1 md:grid-cols-2 gap-8 text-xl items-center relative my-8 lg:my-12'>
+							<div className='w-full flex flex-col gap-4'>
+								{block.title && (
+									<span className='text-5xl 2xl:text-7xl'>
+										{block.title}
+									</span>
+								)}
+								<MyPortableText value={block.blockContent} />
+							</div>
+							{block.image && (
+								<div
+									className={`w-full h-[50vh] md:h-[70vh] 2xl:h-[800px] relative -order-1 ${
+										key % 2 === 0
+											? "md:order-2"
+											: "md:-order-1"
+									}`}
+								>
+									<Image
+										src={block.image.imageUrl}
+										alt={block.image.alt}
+										fill
+										objectFit='cover'
+										className='w-full h-auto'
+									/>
+								</div>
+							)}
+						</div>
+					))}
 				{table && (
 					<div className='w-full flex flex-col items-start gap-4'>
 						<table className='w-full max-w-3xl mx-auto'>
