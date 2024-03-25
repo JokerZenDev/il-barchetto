@@ -23,7 +23,15 @@ export default async function Home({
 			}
 		},
 		contentTitle,
-		blockContent,
+		contentSubtitle,
+		"blocksContent": blocksContent.blocks[]{
+			"title": title,
+			"blockContent": blockContent,
+			"image": {
+				"alt": alt,
+				"imageUrl": asset->url
+			}
+		},
 		"gallery": gallery.images[]{
 			"imageUrl": asset->url,
 			"alt": alt,
