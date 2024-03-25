@@ -48,7 +48,7 @@ export default function SanityPage({
 			>
 				{data.blocksContent &&
 					data.blocksContent.map((block, key) => (
-						<div className='grid grid-cols-1 md:grid-cols-2 gap-8 text-xl items-center relative my-8 lg:my-12'>
+						<div className='grid grid-cols-1 md:grid-cols-2 gap-8 text-xl items-center relative my-8 lg:my-12' key={key}>
 							<div className='w-full flex flex-col gap-4'>
 								{block.title && (
 									<span className='text-5xl 2xl:text-7xl'>
