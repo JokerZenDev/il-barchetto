@@ -34,7 +34,7 @@ export default function Header({
 		>
 			<a
 				href={`/${lang}`}
-				className={`z-10 text-2xl lg:block w-full ${
+				className={`z-10 text-2xl lg:block ${
 					isOpen ? "hidden" : "block"
 				}`}
 				aria-label='homepage'

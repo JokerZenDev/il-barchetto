@@ -40,7 +40,7 @@ export default async function Page({
 						</div>
 					</div>
 					<Form
-						className='flex w-full flex-col items-center gap-4 text-lg'
+						className='flex w-full flex-col items-center gap-4'
 						serverAction={contactUsHandler}
 						dict={dict.contactUs.message}
 					>
@@ -86,7 +86,7 @@ export default async function Page({
 								className='accent-black'
 								required
 							/>
-							<p className='text-xs'>
+							<p className='text-base'>
 								{dict.contactUs.form.privacy} |{" "}
 								<a
 									href={`/${lang}/privacy`}
