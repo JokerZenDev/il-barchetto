@@ -81,11 +81,11 @@ export default function SanityPage({
 					))}
 				{data.menuContent && (
 					<div className='w-full flex flex-col gap-4 text-center text-xl lg:text-2xl'>
-						{/* {data.menuContent.title && (
+						{data.menuContent.title && (
 							<span className='text-5xl 2xl:text-7xl'>
 								{data.menuContent.title}
 							</span>
-						)} */}
+						)}
 						<MyPortableText value={data.menuContent.blockContent} />
 					</div>
 				)}
