@@ -1,5 +1,6 @@
 "use client"
 
+import { useEffect, useRef } from "react"
 import { useFormState } from "react-dom"
 
 const initialState = {
@@ -11,14 +12,21 @@ export default function Form({
 	children,
 	className,
 	serverAction,
-  dict
+	dict,
 }: {
 	children: React.ReactNode
 	className: string
 	serverAction: any
-  dict: any
+	dict: any
 }) {
 	const [state, formAction] = useFormState(serverAction, initialState)
+	const ref = useRef<HTMLFormElement>(null)
+
+	useEffect(() => {
+		if (state.status === 200) {
+			ref.current?.reset()
+		}
+	}, [state.status])
 
 	return (
 		<form className={className} action={formAction}>
