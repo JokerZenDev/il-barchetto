@@ -19,10 +19,18 @@ const socials = [
 	},
 ]
 
-export default function Socials({ dictFooter, moreSpace = false }: { dictFooter: any, moreSpace?: boolean }) {
+export default function Socials({
+	dictFooter,
+	moreSpace = false,
+	showText = true,
+}: {
+	dictFooter: any
+	moreSpace?: boolean
+	showText?: boolean
+}) {
 	return (
 		<div className='flex items-center gap-2'>
-			{dictFooter.followUS}
+			{showText && dictFooter.followUS}
 			<ul className={`flex text-xl ${moreSpace ? "gap-6" : "gap-2"}`}>
 				{socials.map((social, key) => (
 					<li key={key}>

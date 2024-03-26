@@ -4,6 +4,7 @@ import Scaffold from "@/app/(components)/Scaffold"
 import SubmitButton from "@/app/(components)/Form/SubmitButton"
 import { getDictionary } from "@/app/(helpers)/dictionaries"
 import { contactUsHandler } from "@/app/(action)/contactUs"
+import Socials from "@/app/(components)/Socials"
 
 export default async function Page({
 	params: { lang },
@@ -20,61 +21,84 @@ export default async function Page({
 			theme='light'
 		>
 			<Main
-				title={dict.contactUs.title}
+				title={dict.header.contacts}
 				img='/images/madonna-del-sasso-retro.jpg'
 				size='sm'
 			>
-				<Form
-					className='flex w-full flex-col items-center gap-4 text-lg'
-					serverAction={contactUsHandler}
-					dict={dict.contactUs.message}
-				>
-					<div className='flex w-full flex-col gap-4 lg:flex-row'>
-						<input
-							name='name'
-							placeholder={dict.contactUs.form.name}
-							className='w-full border p-2'
-							required
-						/>
-						<input
-							name='lastname'
-							placeholder={dict.contactUs.form.lastname}
-							className='w-full border p-2'
-							required
-						/>
-					</div>
-					<div className='flex w-full flex-col gap-4 lg:flex-row'>
-						<input
-							name='email'
-							placeholder={dict.contactUs.form.email}
-							className='w-full border p-2'
-							required
-						/>
-						<input
-							name='telephone'
-							placeholder={dict.contactUs.form.telephone}
-							className='w-full border p-2'
-							required
-						/>
-					</div>
-					<textarea
-						name='message'
-						placeholder={dict.contactUs.form.message}
-						className='w-full resize-none border p-2'
-						rows={10}
-						required
-					/>
-					<label className='flex w-full gap-2'>
-						<input type='checkbox' className='accent-black' required />
-						<p className='text-xs'>
-							{dict.contactUs.form.privacy} |{" "}
-							<a href={`/${lang}/privacy`} className='underline'>
-								PRIVACY POLICY
+				<div className='flex flex-col gap-12 w-full items-start text-xl'>
+					<div className='flex flex-col gap-2 items-start w-full'>
+						<span className='text-3xl'>{dict.header.contacts}</span>
+						<div className='flex flex-col lg:flex-row lg:justify-between gap-2 lg:items-center w-full'>
+							<span>
+								Via per Boleto, 28894 Madonna del Sasso (VB)
+							</span>
+							<a href='tel:+393470123456'>T. +39 347 9475771</a>
+							<a href='mailto:alpebarchetto@gmail.com'>
+								alpebarchetto@gmail.com
 							</a>
-						</p>
-					</label>
-					<SubmitButton label={dict.contactUs.form.send} />
-				</Form>
+							<Socials dictFooter={dict.footer} showText={false} moreSpace={true} />
+						</div>
+					</div>
+					<Form
+						className='flex w-full flex-col items-center gap-4 text-lg'
+						serverAction={contactUsHandler}
+						dict={dict.contactUs.message}
+					>
+						<span className='text-3xl w-full'>{dict.contactUs.title}</span>
+						<div className='flex w-full flex-col gap-4 lg:flex-row'>
+							<input
+								name='name'
+								placeholder={dict.contactUs.form.name}
+								className='w-full border p-2'
+								required
+							/>
+							<input
+								name='lastname'
+								placeholder={dict.contactUs.form.lastname}
+								className='w-full border p-2'
+								required
+							/>
+						</div>
+						<div className='flex w-full flex-col gap-4 lg:flex-row'>
+							<input
+								name='email'
+								placeholder={dict.contactUs.form.email}
+								className='w-full border p-2'
+								required
+							/>
+							<input
+								name='telephone'
+								placeholder={dict.contactUs.form.telephone}
+								className='w-full border p-2'
+								required
+							/>
+						</div>
+						<textarea
+							name='message'
+							placeholder={dict.contactUs.form.message}
+							className='w-full resize-none border p-2'
+							rows={10}
+							required
+						/>
+						<label className='flex w-full gap-2'>
+							<input
+								type='checkbox'
+								className='accent-black'
+								required
+							/>
+							<p className='text-xs'>
+								{dict.contactUs.form.privacy} |{" "}
+								<a
+									href={`/${lang}/privacy`}
+									className='underline'
+								>
+									PRIVACY POLICY
+								</a>
+							</p>
+						</label>
+						<SubmitButton label={dict.contactUs.form.send} />
+					</Form>
+				</div>
 			</Main>
 		</Scaffold>
 	)
