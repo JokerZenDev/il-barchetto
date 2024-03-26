@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function SliderImage({ image, alt }: { image: string, alt: string }) {
 	return (
-		<div className='relative shadow-bottom h-[50vh]'>
+		<div className='relative shadow-bottom h-[75vh]'>
 			<Image 
 				src={image}
 				alt={alt}

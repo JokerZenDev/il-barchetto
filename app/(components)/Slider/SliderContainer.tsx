@@ -20,7 +20,7 @@ export default function SliderContainer({
 	}
 
 	return (
-		<div className='slider-container relative w-full max-w-[100vh] lg:max-h-[50vh] mx-auto mb-4 text-black'>
+		<div className='slider-container relative w-full max-w-[100vh] lg:max-h-[75vh] mx-auto mb-4 text-black'>
 			<SlickSlider {...settings}>{children}</SlickSlider>
 		</div>
 	)
