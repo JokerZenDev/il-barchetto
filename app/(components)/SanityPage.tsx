@@ -90,7 +90,7 @@ export default function SanityPage({
 					</div>
 				)}
 				{table && (
-					<div className='w-full flex flex-col items-start gap-4'>
+					<div className='w-full flex flex-col items-start gap-4 text-xl mb-12'>
 						<table className='w-full max-w-3xl mx-auto'>
 							<thead>
 								<tr className='border-b'>
