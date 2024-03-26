@@ -25,7 +25,7 @@ export default async function Page({
 				size='sm'
 			>
 				<Form
-					className='flex w-full flex-col items-center gap-4'
+					className='flex w-full flex-col items-center gap-4 text-lg'
 					serverAction={contactUsHandler}
 					dict={dict.contactUs.message}
 				>
@@ -65,7 +65,7 @@ export default async function Page({
 						required
 					/>
 					<label className='flex w-full gap-2'>
-						<input type='checkbox' className='accent-black' />
+						<input type='checkbox' className='accent-black' required />
 						<p className='text-xs'>
 							{dict.contactUs.form.privacy} |{" "}
 							<a href={`/${lang}/privacy`} className='underline'>
