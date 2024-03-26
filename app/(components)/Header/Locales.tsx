@@ -5,8 +5,6 @@ export default async function Locales({ lang }: { lang: string }) {
 
 	const pathname = headersList.get("x-pathname")
 
-	console.log(pathname)
-
 	return (
 		<div className='flex items-center gap-4 lg:gap-6'>
 			{lang !== "it" && (
