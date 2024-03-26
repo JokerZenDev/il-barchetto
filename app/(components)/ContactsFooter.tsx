@@ -19,7 +19,7 @@ export default function ContactsFooter({ lang }: { lang: string }) {
 					Menu
 				</a>
 				<a
-					href='https://www.google.com/maps/dir//Agriturismo+Il+Barchetto,+Via+per+Boleto,+28894+Madonna+del+Sasso+VB/@45.7916827,8.3554081,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47860c2a5d3c32a3:0x6f080a4dc526c6d9!2m2!1d8.357983!2d45.791679!3e0?entry=ttu'
+					href='https://www.google.com/maps/dir//Agriturismo+Il+Barchetto,+Via+per+Boleto,+28894+Madonna+del+Sasso+VB/@45.7916827,8.3554081,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x47860c2a5d3c32a3:0x6f080a4dc526c6d9!2m2!1d8.357983!2d45.791679!3e0'
 					className='w-full h-full flex justify-center items-center text-white uppercase'
 					target='_blank'
 					rel='noreferrer'

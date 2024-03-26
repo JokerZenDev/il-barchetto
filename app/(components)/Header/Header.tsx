@@ -39,25 +39,26 @@ export default function Header({
 				}`}
 				aria-label='homepage'
 			>
-				{(isScrolled || theme === "dark") && (
-					<Image
-						src='/images/logo.png'
-						alt='logo'
-						width={150}
-						height={100}
-						className=''
-					/>
-				)}
-				{!isScrolled && theme === "light" && (
-					<Image
-						src='/images/logo_white.png'
-						alt='logo'
-						width={150}
-						height={100}
-						className=''
-					/>
-				)}
-				{/* Agriturismo Il Barchetto */}
+				<Image
+					src='/images/logo.png'
+					alt='logo'
+					width={150}
+					height={100}
+					priority
+					className={`${
+						!(isScrolled || theme === "dark") && "hidden"
+					}`}
+				/>
+				<Image
+					src='/images/logo_white.png'
+					alt='logo'
+					width={150}
+					height={100}
+					priority
+					className={`${
+						!(!isScrolled && theme === "light") && "hidden"
+					}`}
+				/>
 			</a>
 			<div
 				className={`flex items-center justify-end gap-6 lg:justify-start ${
