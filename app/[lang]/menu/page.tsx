@@ -8,8 +8,8 @@ export default async function Menu({
 }: {
 	params: { lang: string }
 }) {
-	const menuData = await client.fetch<Menu[]>(
-		`*[_type == "menu"]{
+	const menuData = await client.fetch<Menu>(
+		`*[_type == "menu"][0]{
 		_id,
 		title,
 		blockContent,
@@ -22,12 +22,6 @@ export default async function Menu({
 
 	const dict = await getDictionary(lang)
 
-	const contentData = menuData.map((item) => {
-		return {
-			contentTitle: item.title,
-			blockContent: item.blockContent,
-		}
-	})
 	const data: Page = {
 		_id: "menu",
 		title: dict.menu.title,
@@ -39,7 +33,7 @@ export default async function Menu({
 			},
 			size: "sm",
 		},
-		content: contentData,
+		menuContent: menuData,
 	}
 
 	return (

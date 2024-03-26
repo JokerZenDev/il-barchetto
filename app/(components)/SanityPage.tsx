@@ -48,7 +48,10 @@ export default function SanityPage({
 			>
 				{data.blocksContent &&
 					data.blocksContent.map((block, key) => (
-						<div className='grid grid-cols-1 md:grid-cols-2 gap-8 text-xl items-center relative my-8 lg:my-12' key={key}>
+						<div
+							className='grid grid-cols-1 md:grid-cols-2 gap-8 text-xl items-center relative my-8 lg:my-12'
+							key={key}
+						>
 							<div className='w-full flex flex-col gap-4'>
 								{block.title && (
 									<span className='text-5xl 2xl:text-7xl'>
@@ -76,6 +79,16 @@ export default function SanityPage({
 							)}
 						</div>
 					))}
+				{data.menuContent && (
+					<div className='w-full flex flex-col gap-4 text-center text-xl lg:text-2xl'>
+						{/* {data.menuContent.title && (
+							<span className='text-5xl 2xl:text-7xl'>
+								{data.menuContent.title}
+							</span>
+						)} */}
+						<MyPortableText value={data.menuContent.blockContent} />
+					</div>
+				)}
 				{table && (
 					<div className='w-full flex flex-col items-start gap-4'>
 						<table className='w-full max-w-3xl mx-auto'>
@@ -133,7 +146,7 @@ export default function SanityPage({
 					/>
 				)}
 				{footnotes && (
-					<span className='text-xs font-thin'>{footnotes}</span>
+					<span className='text-base font-thin'>{footnotes}</span>
 				)}
 			</Main>
 		</Scaffold>

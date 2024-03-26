@@ -25,6 +25,7 @@ type Page = {
 			imageUrl: string
 		},
 	}[]
+	menuContent?: Menu
 	content?: {
 		contentTitle?: string
 		blockContent?: TypedObject[]
