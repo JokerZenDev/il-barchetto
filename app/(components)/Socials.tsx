@@ -9,7 +9,7 @@ const socials = [
 	},
 	{
 		icon: <FiInstagram />,
-		link: "https://www.instagram.com/agriturismobarchetto/",
+		link: "https://www.instagram.com/agriturismo_il_barchetto/",
 		name: "Instagram",
 	},
 	{
