@@ -29,25 +29,29 @@
     ]
   },
   "contactUs": {
-    "title": "Contattaci",
+    "title": "Contact us",
     "form": {
-      "name": "Nome",
-      "lastname": "Cognome",
+      "name": "Name",
+      "lastname": "Lastname",
       "email": "Email",
-      "telephone": "Telefono",
-      "message": "Messaggio",
-      "privacy": "Autorizzo il trattamento dei dati personali",
-      "send": "Invia"
+      "telephone": "Telephone",
+      "message": "Message",
+      "privacy": "I authorize the processing of personal data",
+      "send": "Send"
+    },
+    "message": {
+      "success": "Message sent",
+      "error": "Message not sent"
     }
   },
   "feasr": {
     "title": "FEASR"
   },
   "footer": {
-    "copyright": "Tutti i diritti riservati.",
+    "copyright": "All rights reserved.",
     "followUS": "Follow on:",
     "additionalLinks": {
-      "feasr": "Progetto FEASR",
+      "feasr": "FEASR project",
       "cookie-policy": "Cookie Policy"
     }
   },
@@ -63,7 +67,7 @@
   },
   "menu": {
     "title": "Menus",
-    "footnotes": "*Alcuni prodotti potrebbero essere congelati all'origine"
+    "footnotes": "*Some products may be frozen at origin"
   },
   "cookiePolicy": {
     "title": "Privacy Policy and Cookies",

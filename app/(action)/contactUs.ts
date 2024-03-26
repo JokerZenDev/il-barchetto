@@ -54,9 +54,9 @@ Messaggio: ${message}`;
       },
     });
 
-    return { status: 200, message: "Email sent" }
+    return { status: 200, message: "success" }
   } catch (error) {
     console.error('The API returned an error: ' + error);
-    return { status: 500, message: "Error" }
+    return { status: 500, message: "error" }
   }
 };

@@ -38,6 +38,10 @@
       "message": "Messaggio",
       "privacy": "Autorizzo il trattamento dei dati personali",
       "send": "Invia"
+    },
+    "message": {
+      "success": "Messaggio inviato",
+      "error": "Messaggio non inviato"
     }
   },
   "feasr": {

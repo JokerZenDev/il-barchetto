@@ -27,6 +27,7 @@ export default async function Page({
 				<Form
 					className='flex w-full flex-col items-center gap-4'
 					serverAction={contactUsHandler}
+					dict={dict.contactUs.message}
 				>
 					<div className='flex w-full flex-col gap-4 lg:flex-row'>
 						<input
