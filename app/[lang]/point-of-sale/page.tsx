@@ -27,6 +27,8 @@ export default async function Farm({
 		"blocksContent": blocksContent.blocks[]{
 			"title": title,
 			"blockContent": blockContent,
+			"buttonText": buttonText,
+			"buttonLink": buttonLink,
 			"image": {
 				"alt": alt,
 				"imageUrl": asset->url

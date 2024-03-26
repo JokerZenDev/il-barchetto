@@ -24,6 +24,8 @@ type Page = {
 			alt: string
 			imageUrl: string
 		},
+		buttonText?: string,
+		buttonLink?: string
 	}[]
 	menuContent?: Menu
 	content?: {

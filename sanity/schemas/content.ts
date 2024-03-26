@@ -31,6 +31,16 @@ export default {
 							type: 'blockContent',
 							title: 'Testo',
 						},
+						{
+							name: 'buttonText',
+							type: 'string',
+							title: 'Testo bottone',
+						},
+						{
+							name: 'buttonLink',
+							type: 'string',
+							title: 'Link bottone',
+						}
 					],
 				},
 			],

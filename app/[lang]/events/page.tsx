@@ -27,6 +27,8 @@ export default async function Farm({
 		"blocksContent": blocksContent.blocks[]{
 			"title": title,
 			"blockContent": blockContent,
+			"buttonText": buttonText,
+			"buttonLink": buttonLink,
 			"image": {
 				"alt": alt,
 				"imageUrl": asset->url
@@ -44,6 +46,8 @@ export default async function Farm({
 	)
 
 	const dict = await getDictionary(lang)
+
+	console.log(pageData)
 
 	return <SanityPage dict={dict} lang={lang} data={pageData} />
 }

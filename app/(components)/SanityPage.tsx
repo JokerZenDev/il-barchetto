@@ -59,6 +59,16 @@ export default function SanityPage({
 									</span>
 								)}
 								<MyPortableText value={block.blockContent} />
+								{block.buttonText && block.buttonLink && (
+									<a
+										href={block.buttonLink}
+										target='_blank'
+										rel='noreferrer'
+										className="w-fit px-4 py-2 border-2 border-amber-900 text-amber-900 hover:bg-amber-900 hover:text-white transition-colors text-2xl"
+									>
+										{block.buttonText}
+									</a>
+								)}
 							</div>
 							{block.image && (
 								<div
@@ -82,7 +92,7 @@ export default function SanityPage({
 				{data.menuContent && (
 					<div className='w-full flex flex-col gap-4 text-center text-xl lg:text-2xl'>
 						{data.menuContent.title && (
-							<span className='text-5xl 2xl:text-7xl'>
+							<span className='text-5xl 2xl:text-7xl mb-8'>
 								{data.menuContent.title}
 							</span>
 						)}

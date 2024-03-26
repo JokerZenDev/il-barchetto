@@ -27,6 +27,8 @@ export default async function Farmhouse({
 		"blocksContent": blocksContent.blocks[]{
 			"title": title,
 			"blockContent": blockContent,
+			"buttonText": buttonText,
+			"buttonLink": buttonLink,
 			"image": {
 				"alt": alt,
 				"imageUrl": asset->url
