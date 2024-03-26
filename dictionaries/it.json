@@ -30,6 +30,12 @@
   },
   "contactUs": {
     "title": "Contattaci",
+    "hours": {
+      "title": "Orari",
+      "closed": "Lunedì e Martedì - Chiuso",
+      "openDays": "Da Mercoledì a Domenica",
+      "openHours": "11:30 - 23:00"
+    },
     "form": {
       "name": "Nome",
       "lastname": "Cognome",
@@ -37,7 +43,8 @@
       "telephone": "Telefono",
       "message": "Messaggio",
       "privacy": "Autorizzo il trattamento dei dati personali",
-      "send": "Invia"
+      "send": "Invia",
+      "sending": "Inviando..."
     },
     "message": {
       "success": "Messaggio inviato",

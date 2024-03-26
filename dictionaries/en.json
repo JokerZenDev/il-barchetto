@@ -30,6 +30,12 @@
   },
   "contactUs": {
     "title": "Contact us",
+    "hours": {
+      "title": "Hours",
+      "closed": "Monday and Tuesday - Closed",
+      "openDays": "From Wednesday to Sunday",
+      "openHours": "11:30 - 23:00"
+    },
     "form": {
       "name": "Name",
       "lastname": "Lastname",
@@ -37,7 +43,8 @@
       "telephone": "Telephone",
       "message": "Message",
       "privacy": "I authorize the processing of personal data",
-      "send": "Send"
+      "send": "Send",
+      "sending": "Sending..."
     },
     "message": {
       "success": "Message sent",
