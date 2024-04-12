@@ -107,7 +107,7 @@ export default async function Page({
 							<p className='text-base'>
 								{dict.contactUs.form.privacy} |{" "}
 								<a
-									href={`/${lang}/privacy`}
+									href={`/${lang}/cookie-policy`}
 									className='underline'
 								>
 									PRIVACY POLICY

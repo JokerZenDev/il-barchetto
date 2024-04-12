@@ -12,7 +12,7 @@ export default {
 			name: 'heading',
 			type: 'string',
 			title: 'Titolo',
-			validation: (Rule: any) => Rule.required(),
+			// validation: (Rule: any) => Rule.required(),
 		},
 		{
 			name: 'subtitle',

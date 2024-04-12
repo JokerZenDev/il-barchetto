@@ -6,7 +6,7 @@ type Page = {
 	title?: string
 	hero?: {
 		surtitle?: string
-		heading: string
+		heading?: string
 		subtitle?: string
 		image: {
 			alt: string
