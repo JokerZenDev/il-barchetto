@@ -5,7 +5,7 @@ export default function ContactsFooter({ lang }: { lang: string }) {
 		<div className='w-full h-14 bg-black text-xl'>
 			<div className='lg:hidden flex fixed w-full h-14 bottom-0 left-0 right-0 z-10 bg-slate-700 items-center'>
 				<a
-					href='tel:+393470123456'
+					href='tel:+393479475771'
 					className='w-full h-full flex justify-center items-center text-white uppercase'
 					target='_blank'
 					rel='noreferrer'

@@ -34,7 +34,7 @@ export default async function Page({
 							<span>
 								Via per Boleto, 28894 Madonna del Sasso (VB)
 							</span>
-							<a href='tel:+393470123456'>T. +39 347 9475771</a>
+							<a href='tel:+393479475771'>T. +39 347 9475771</a>
 							<a href='mailto:alpebarchetto@gmail.com'>
 								alpebarchetto@gmail.com
 							</a>
