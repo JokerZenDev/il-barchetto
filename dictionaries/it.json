@@ -28,6 +28,10 @@
       "I vostri amici a quattro zampe da noi sono benvenuti, per cani di media e grossa taglia costo spese di pulizia  10 € a notte"
     ]
   },
+  "cookie": {
+    "message": "Questo sito web utilizza i cookie per migliorare la tua esperienza di navigazione. Continuando a utilizzare il nostro sito, accetti il nostro uso dei cookie.",
+    "buttonText": "Accetta"
+  },
   "contactUs": {
     "title": "Contattaci",
     "hours": {

@@ -1,4 +1,5 @@
 import ContactsFooter from "./ContactsFooter";
+import Cookie from "../(components)/Cookie"
 import Footer from "./Footer";
 import Header from "./Header/Header";
 import Locales from "./Header/Locales";
@@ -7,12 +8,14 @@ export default function Scaffold({
   lang,
   dictHeader,
   dictFooter,
+  dictCookie,
   theme,
   children,
 }: {
   lang: string;
   dictHeader: any;
   dictFooter: any;
+  dictCookie: any;
   theme: "light" | "dark";
   children: React.ReactNode;
 }) {
@@ -24,6 +27,7 @@ export default function Scaffold({
       {children}
       <Footer lang={lang} dictHeader={dictHeader} dictFooter={dictFooter} />
       <ContactsFooter lang={lang} />
+      <Cookie dictCookie={dictCookie} />
     </>
   );
 }

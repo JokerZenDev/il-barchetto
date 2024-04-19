@@ -28,6 +28,10 @@
       "Your four-legged friends are welcome here, for medium and large-sized dogs a cleaning fee of €10 per night is charged"
     ]
   },
+  "cookie": {
+    "message": "This website uses cookies to enhance your browsing experience. By continuing to use our site, you agree to our use of cookies.",
+    "buttonText": "Accept"
+  },
   "contactUs": {
     "title": "Contact us",
     "hours": {

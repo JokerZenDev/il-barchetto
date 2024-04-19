@@ -18,6 +18,7 @@ export default async function Page({
 			lang={lang}
 			dictHeader={dict.header}
 			dictFooter={dict.footer}
+			dictCookie={dict.cookie}
 			theme='light'
 		>
 			<Main

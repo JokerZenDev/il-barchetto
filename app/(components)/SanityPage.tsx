@@ -35,6 +35,7 @@ export default function SanityPage({
 			lang={lang}
 			dictHeader={dict.header}
 			dictFooter={dict.footer}
+			dictCookie={dict.cookie}
 			theme={theme}
 		>
 			<Main
