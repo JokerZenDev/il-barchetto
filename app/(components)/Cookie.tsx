@@ -8,6 +8,8 @@ export default function Cookie({ dictCookie }: { dictCookie: any }) {
 			buttonStyle={{ color: "black", background: "white" }}
 			style={{ background: "black", color: "white" }}
 			buttonText={dictCookie.buttonText}
+			acceptOnScroll={true}
+			acceptOnScrollPercentage={50}
 		>
 			{dictCookie.message}
 		</CookieConsent>
