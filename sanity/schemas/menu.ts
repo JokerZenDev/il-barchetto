@@ -1,4 +1,4 @@
-export default {
+const menu = {
 	name: 'menu',
 	type: 'document',
 	title: 'Menu',
@@ -17,3 +17,5 @@ export default {
 		},
 	],
 }
+
+export default menu;

@@ -1,4 +1,4 @@
-export default {
+const hero = {
 	name: 'hero',
 	type: 'object',
 	title: 'Hero',
@@ -34,3 +34,5 @@ export default {
 		},
 	],
 }
+
+export default hero;

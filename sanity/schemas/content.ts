@@ -1,4 +1,4 @@
-export default {
+const content = {
 	name: 'content',
 	type: 'object',
 	title: 'Contenuto',
@@ -50,3 +50,5 @@ export default {
 		},
 	],
 };
+
+export default content;
