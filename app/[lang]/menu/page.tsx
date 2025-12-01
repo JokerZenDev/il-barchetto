@@ -1,6 +1,6 @@
 import { client } from "@/sanity/lib/client"
 import { getDictionary } from "../../(helpers)/dictionaries"
-import { Menu, Page } from "../../page"
+import { Menu as MenuType, Page } from "../../page"
 import SanityPage from "../../(components)/SanityPage"
 
 export default async function Menu({
@@ -8,7 +8,7 @@ export default async function Menu({
 }: {
 	params: { lang: string }
 }) {
-	const menuData = await client.fetch<Menu>(
+	const menuData = await client.fetch<MenuType>(
 		`*[_type == "menu"][0]{
 		_id,
 		title,
