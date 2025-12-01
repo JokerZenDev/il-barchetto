@@ -5,6 +5,7 @@ import Scaffold from "./Scaffold"
 import { Page } from "../page"
 import { ContentBody } from "./Content"
 import Image from "next/image"
+import { FaExternalLinkAlt } from "react-icons/fa"
 
 export default function SanityPage({
 	dict,
@@ -140,6 +141,20 @@ export default function SanityPage({
 							</div>
 						))}
 						{}
+					</div>
+				)}
+				{data.attachments && data.attachments.files.length > 0 && (
+					<div className='w-full flex flex-col gap-4 text-xl mb-12'>
+						<span className='text-xl'>{data.attachments.label}</span>
+						<div className='flex flex-col gap-4'>
+							{data.attachments.files.map((item, key) => (
+								<div key={key}>
+									<a href={item.file.url} target='_blank' rel='noreferrer' className='flex items-center gap-2'>
+										{item.title} <FaExternalLinkAlt className='text-2xl' />
+									</a>
+								</div>
+							))}
+						</div>
 					</div>
 				)}
 				{data.gallery && data.gallery.length > 0 && (

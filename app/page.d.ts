@@ -37,6 +37,16 @@ type Page = {
 		alt: string
 		imageUrl: string
 	}[]
+	attachments?: {
+		label: string
+		files: {
+			title: string
+			file: {
+				url: string
+				mimeType: string
+			}
+		}[]
+	}
 }
 
 type Menu = {
