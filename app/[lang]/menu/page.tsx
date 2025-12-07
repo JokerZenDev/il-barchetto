@@ -1,6 +1,6 @@
 import { client } from "@/sanity/lib/client"
 import { getDictionary } from "../../(helpers)/dictionaries"
-import { Menu, Page } from "../../page"
+import { Menu as MenuType, Page } from "../../page"
 import SanityPage from "../../(components)/SanityPage"
 
 export default async function Menu({
@@ -8,11 +8,21 @@ export default async function Menu({
 }: {
 	params: { lang: string }
 }) {
-	const menuData = await client.fetch<Menu>(
+	const menuData = await client.fetch<MenuType>(
 		`*[_type == "menu"][0]{
 		_id,
 		title,
 		blockContent,
+		"attachments": attachments{
+			"label": label,
+			"files": files[]{
+				"title": title,
+				"file": file{
+					"url": asset->url,
+					"mimeType": mimeType,
+				},
+			},
+		}
 	}`,
 		{},
 		{
@@ -42,6 +52,7 @@ export default async function Menu({
 			lang={lang}
 			data={data}
 			footnotes={dict.menu.footnotes}
+			attachmentsAreBeforeContent={true}
 		/>
 	)
 }

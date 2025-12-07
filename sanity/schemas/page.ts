@@ -1,4 +1,4 @@
-export default {
+const page = {
 	name: 'page',
 	type: 'document',
 	title: 'Page',
@@ -43,5 +43,12 @@ export default {
 			type: 'gallery',
 			title: 'Galleria',
 		},
+		{
+			name: 'attachments',
+			type: 'attachments',
+			title: 'Allegati',
+		},
 	],
 }
+
+export default page;

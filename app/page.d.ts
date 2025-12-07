@@ -37,10 +37,30 @@ type Page = {
 		alt: string
 		imageUrl: string
 	}[]
+	attachments?: {
+		label: string
+		files: {
+			title: string
+			file: {
+				url: string
+				mimeType: string
+			}
+		}[]
+	}
 }
 
 type Menu = {
 	_id: string
 	title: string
 	blockContent: TypedObject[]
+	attachments?: {
+		label: string
+		files: {
+			title: string
+			file: {
+				url: string
+				mimeType: string
+			}
+		}[]
+	}
 }

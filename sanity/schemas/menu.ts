@@ -1,4 +1,4 @@
-export default {
+const menu = {
 	name: 'menu',
 	type: 'document',
 	title: 'Menu',
@@ -15,5 +15,12 @@ export default {
 			title: 'Contenuto',
 			validation: (Rule: any) => Rule.required(),
 		},
+		{
+			name: 'attachments',
+			type: 'attachments',
+			title: 'Allegati',
+		},
 	],
 }
+
+export default menu;
