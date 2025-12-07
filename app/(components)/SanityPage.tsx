@@ -15,6 +15,7 @@ export default function SanityPage({
 	footnotes,
 	theme = "light",
 	img,
+	attachmentsAreBeforeContent = false,
 }: {
 	dict: { [key: string]: { [key: string]: string | string[] } }
 	lang: string
@@ -30,6 +31,7 @@ export default function SanityPage({
 		imageUrl: string
 		alt: string
 	}
+	attachmentsAreBeforeContent?: boolean
 }) {
 	return (
 		<Scaffold
@@ -91,6 +93,20 @@ export default function SanityPage({
 							)}
 						</div>
 					))}
+				{data.attachments && data.attachments.files.length > 0 && attachmentsAreBeforeContent && (
+					<div className='w-full flex flex-col gap-4 text-xl mb-12'>
+						<span className='text-5xl 2xl:text-7xl'>{data.attachments.label}</span>
+						<div className='flex flex-col gap-4'>
+							{data.attachments.files.map((item, key) => (
+								<div key={key}>
+									<a href={item.file.url} target='_blank' rel='noreferrer' className='flex items-center gap-2'>
+										{item.title} <FaExternalLinkAlt className='text-2xl' />
+									</a>
+								</div>
+							))}
+						</div>
+					</div>
+				)}
 				{data.menuContent && (
 					<div className='w-full flex flex-col gap-4 text-center text-xl lg:text-2xl'>
 						{data.menuContent.title && (
@@ -143,9 +159,9 @@ export default function SanityPage({
 						{}
 					</div>
 				)}
-				{data.attachments && data.attachments.files.length > 0 && (
+				{data.attachments && data.attachments.files.length > 0 && !attachmentsAreBeforeContent && (
 					<div className='w-full flex flex-col gap-4 text-xl mb-12'>
-						<span className='text-xl'>{data.attachments.label}</span>
+						<span className='text-5xl 2xl:text-7xl'>{data.attachments.label}</span>
 						<div className='flex flex-col gap-4'>
 							{data.attachments.files.map((item, key) => (
 								<div key={key}>
