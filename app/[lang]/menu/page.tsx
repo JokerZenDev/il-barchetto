@@ -13,6 +13,16 @@ export default async function Menu({
 		_id,
 		title,
 		blockContent,
+		"attachments": attachments{
+			"label": label,
+			"files": files[]{
+				"title": title,
+				"file": file{
+					"url": asset->url,
+					"mimeType": mimeType,
+				},
+			},
+		}
 	}`,
 		{},
 		{
@@ -42,6 +52,7 @@ export default async function Menu({
 			lang={lang}
 			data={data}
 			footnotes={dict.menu.footnotes}
+			attachmentsAreBeforeContent={true}
 		/>
 	)
 }

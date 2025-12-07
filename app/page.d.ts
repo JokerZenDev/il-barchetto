@@ -53,4 +53,14 @@ type Menu = {
 	_id: string
 	title: string
 	blockContent: TypedObject[]
+	attachments?: {
+		label: string
+		files: {
+			title: string
+			file: {
+				url: string
+				mimeType: string
+			}
+		}[]
+	}
 }
