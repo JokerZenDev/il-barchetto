@@ -15,6 +15,11 @@ const menu = {
 			title: 'Contenuto',
 			validation: (Rule: any) => Rule.required(),
 		},
+		{
+			name: 'attachments',
+			type: 'attachments',
+			title: 'Allegati',
+		},
 	],
 }
 
