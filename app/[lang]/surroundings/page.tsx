@@ -37,6 +37,16 @@ export default async function Surroundings({
 		"gallery": gallery.images[]{
 			"imageUrl": asset->url,
 			"alt": alt,
+		},
+		"attachments": attachments{
+			"label": label,
+			"files": files[]{
+				"title": title,
+				"file": file{
+					"url": asset->url,
+					"mimeType": mimeType,
+				},
+			},
 		}
 	}`,
 		{},

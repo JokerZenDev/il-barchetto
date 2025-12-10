@@ -160,6 +160,7 @@ export default function SanityPage({
 						{}
 					</div>
 				)}
+				{/* Attachments after content */}
 				{data.attachments && data.attachments.files.length > 0 && !attachmentsAreBeforeContent && (
 					<div className='w-full flex flex-col gap-4 text-xl mb-12'>
 						<span className='text-5xl 2xl:text-7xl'>{data.attachments.label}</span>
