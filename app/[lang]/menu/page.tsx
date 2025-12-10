@@ -22,6 +22,16 @@ export default async function Menu({
 					"mimeType": mimeType,
 				},
 			},
+		},
+		"footnotes": footnotes{
+			"label": label,
+			"files": files[]{
+				"title": title,
+				"file": file{
+					"url": asset->url,
+					"mimeType": mimeType,
+				},
+			},
 		}
 	}`,
 		{},
@@ -32,7 +42,7 @@ export default async function Menu({
 
 	const dict = await getDictionary(lang)
 
-	const { attachments, ...menuContent } = menuData
+	const { attachments, footnotes, ...menuContent } = menuData
 
 	const data: Page = {
 		_id: "menu",
@@ -47,6 +57,7 @@ export default async function Menu({
 		},
 		menuContent,
 		attachments,
+		footnotes,
 	}
 
 	return (

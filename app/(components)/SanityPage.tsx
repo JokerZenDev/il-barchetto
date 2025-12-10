@@ -95,7 +95,7 @@ export default function SanityPage({
 					))}
 				{/* Attachments before content */}
 				{data.attachments && data.attachments.files.length > 0 && attachmentsAreBeforeContent && (
-					<div className='w-full flex flex-col gap-4 text-center text-xl lg:text-2xl'>
+					<div className='w-full flex flex-col gap-4 text-center text-xl lg:text-2xl mb-12'>
 						<span className='text-5xl 2xl:text-7xl'>{data.attachments.label}</span>
 						<div className='flex flex-col gap-4 items-center'>
 							{data.attachments.files.map((item, key) => (
@@ -160,6 +160,20 @@ export default function SanityPage({
 						{}
 					</div>
 				)}
+				{data.gallery && data.gallery.length > 0 && (
+					<div className='w-full'>
+						<Slider slides={data.gallery} />
+					</div>
+				)}
+				{img && (
+					<Image
+						src={img.imageUrl}
+						alt={img.alt}
+						width={1000}
+						height={1000}
+						className='w-full h-auto mt-6'
+					/>
+				)}
 				{/* Attachments after content */}
 				{data.attachments && data.attachments.files.length > 0 && !attachmentsAreBeforeContent && (
 					<div className='w-full flex flex-col gap-4 text-xl mb-12'>
@@ -175,19 +189,20 @@ export default function SanityPage({
 						</div>
 					</div>
 				)}
-				{data.gallery && data.gallery.length > 0 && (
-					<div className='w-full'>
-						<Slider slides={data.gallery} />
+				{/* Footnotes */}
+				{data.footnotes && data.footnotes.files.length > 0 && (
+					<div className='w-full flex flex-col gap-4 text-xl mb-12'>
+						<span className='text-5xl 2xl:text-7xl'>{data.footnotes.label}</span>
+						<div className='flex flex-col gap-4'>
+							{data.footnotes.files.map((item, key) => (
+								<div key={key}>
+									<a href={item.file.url} target='_blank' rel='noreferrer' className='flex items-center gap-2'>
+										{item.title} <FaExternalLinkAlt className='text-2xl' />
+									</a>
+								</div>
+							))}
+						</div>
 					</div>
-				)}
-				{img && (
-					<Image
-						src={img.imageUrl}
-						alt={img.alt}
-						width={1000}
-						height={1000}
-						className='w-full h-auto mt-6'
-					/>
 				)}
 				{footnotes && (
 					<span className='text-base font-thin'>{footnotes}</span>

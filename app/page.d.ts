@@ -47,6 +47,16 @@ type Page = {
 			}
 		}[]
 	}
+	footnotes?: {
+		label: string
+		files: {
+			title: string
+			file: {
+				url: string
+				mimeType: string
+			}
+		}[]
+	}
 }
 
 type Menu = {
@@ -54,6 +64,16 @@ type Menu = {
 	title: string
 	blockContent: TypedObject[]
 	attachments?: {
+		label: string
+		files: {
+			title: string
+			file: {
+				url: string
+				mimeType: string
+			}
+		}[]
+	}
+	footnotes?: {
 		label: string
 		files: {
 			title: string

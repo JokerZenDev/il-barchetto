@@ -18,7 +18,12 @@ const menu = {
 		{
 			name: 'attachments',
 			type: 'attachments',
-			title: 'Allegati',
+			title: 'Allegati in alto',
+		},
+		{
+			name: 'footnotes',
+			type: 'attachments',
+			title: 'Allegati in fondo',
 		},
 	],
 }
