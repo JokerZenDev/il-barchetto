@@ -32,6 +32,8 @@ export default async function Menu({
 
 	const dict = await getDictionary(lang)
 
+	const { attachments, ...menuContent } = menuData
+
 	const data: Page = {
 		_id: "menu",
 		title: dict.menu.title,
@@ -43,7 +45,8 @@ export default async function Menu({
 			},
 			size: "sm",
 		},
-		menuContent: menuData,
+		menuContent,
+		attachments,
 	}
 
 	return (
