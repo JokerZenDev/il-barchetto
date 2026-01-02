@@ -94,7 +94,7 @@ export default function SanityPage({
 						</div>
 					))}
 				{/* Attachments before content */}
-				{data.attachments && data.attachments.files.length > 0 && attachmentsAreBeforeContent && (
+				{data.attachments && data.attachments.files && data.attachments.files.length > 0 && attachmentsAreBeforeContent && (
 					<div className='w-full flex flex-col gap-4 text-center text-xl lg:text-2xl mb-12'>
 						<span className='text-5xl 2xl:text-7xl'>{data.attachments.label}</span>
 						<div className='flex flex-col gap-4 items-center'>
@@ -175,7 +175,7 @@ export default function SanityPage({
 					/>
 				)}
 				{/* Attachments after content */}
-				{data.attachments && data.attachments.files.length > 0 && !attachmentsAreBeforeContent && (
+				{data.attachments && data.attachments.files && data.attachments.files.length > 0 && !attachmentsAreBeforeContent && (
 					<div className='w-full flex flex-col gap-4 text-xl mb-12'>
 						<span className='text-5xl 2xl:text-7xl'>{data.attachments.label}</span>
 						<div className='flex flex-col gap-4'>
@@ -190,7 +190,7 @@ export default function SanityPage({
 					</div>
 				)}
 				{/* Footnotes */}
-				{data.footnotes && data.footnotes.files.length > 0 && (
+				{data.footnotes &&data.footnotes.files &&  data.footnotes.files.length > 0 && (
 					<div className='w-full flex flex-col gap-4 text-xl mb-12'>
 						<span className='text-5xl 2xl:text-7xl'>{data.footnotes.label}</span>
 						<div className='flex flex-col gap-4'>
