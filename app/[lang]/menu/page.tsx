@@ -9,7 +9,14 @@ export default async function Menu({
 	params: { lang: string }
 }) {
 	const menuData = await client.fetch<MenuType>(
-		`*[_type == "menu"][0]{
+		`*[
+		_type == "menu" &&
+		(language == $lang || language == "it" || !defined(language))
+	] | order(select(
+		language == $lang => 0,
+		language == "it" => 1,
+		!defined(language) => 2
+	))[0]{
 		_id,
 		title,
 		blockContent,
@@ -34,7 +41,7 @@ export default async function Menu({
 			},
 		}
 	}`,
-		{},
+		{ lang },
 		{
 			next: { tags: ["menu"] },
 		}

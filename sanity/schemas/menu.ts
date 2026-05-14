@@ -4,6 +4,12 @@ const menu = {
 	title: 'Menu',
 	fields: [
 		{
+			name: 'language',
+			type: 'string',
+			readOnly: true,
+			hidden: true,
+		},
+		{
 			name: 'title',
 			type: 'string',
 			title: 'Nome Menu',

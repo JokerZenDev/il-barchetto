@@ -28,7 +28,7 @@ export default defineConfig({
         { id: 'it', title: 'Italiano' },
         { id: 'en', title: 'English' }
       ],
-      schemaTypes: ["page"],
+      schemaTypes: ["page", "menu"],
       metadataFields: [
         {
           name: 'slug',
